@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+
+    <title>게시판 샘플</title>
+    <link rel="stylesheet" type="text/css" href="../../../assets/pc/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="list.css" />
+
+    <script src="include.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+
+    <script>
+      hljs.highlightAll();
+    </script>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- headerWrap -->
+      <div class="header_wrap" w3-include-html="./include/header.html"></div>
+      <!-- headerWrap -->
+
+      <main>
+        <article>
+          <section>
+            <div class="page-title">
+              <h2 class="title">게시판 샘플 2</h2>
+              <p class="title-desc">SK 렌터카의 새로운 소식과 정보들을 한곳에서 확인할 수 있어요.</p>
+            </div>
+          </section>
+          <section>
+            <div class="board-wrap">
+              <table>
+                <colgroup>
+                  <col width="90px" />
+                  <col width="auto" />
+                  <col width="150px" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">타이틀</th>
+                    <th scope="col">타이틀</th>
+                    <th scope="col">타이틀</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row"><span class="badge">공지</span></td>
+                    <td>
+                      <a href="" title="공지사항 제목"><span class="category">[안내]</span>서비스 오픈 안내</a>
+                    </td>
+                    <td>2013-08-17</td>
+                  </tr>
+
+                  <tr>
+                    <td scope="row">1.</td>
+                    <td>
+                      <a href="" title="공지사항 제목"><span class="category">[안내]</span>서비스 오픈 안내</a>
+                    </td>
+                    <td>2013-08-17</td>
+                  </tr>
+
+                  <tr>
+                    <td scope="row">2.</td>
+                    <td>
+                      <a href="" title="공지사항 제목"><span class="category">[안내]</span>서비스 오픈 안내</a>
+                    </td>
+                    <td>2013-08-17</td>
+                  </tr>
+
+                  <tr>
+                    <td scope="row"></td>
+                    <td><a href="" title="공지사항 제목"></a></td>
+                    <td>2013-08-17</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div role="navigation" class="paging-wrap">
+              <a href="" class="first"><span class="hide-txt">첫페이지</span></a>
+              <a href="" class="prev"><span class="hide-txt">이전페이지</span></a>
+              <ol>
+                <li class="page-btn"><a href="page=1">1</a></li>
+                <li class="page-btn"><a href="page=2">2</a></li>
+                <li class="page-btn"><a href="page=3">3</a></li>
+                <li class="page-btn"><a href="page=4">4</a></li>
+                <li class="page-btn"><a href="page=4">5</a></li>
+                <li class="page-btn"><a href="page=4">6</a></li>
+                <li class="page-btn"><a href="page=4">7</a></li>
+                <li class="page-btn"><a href="page=4">8</a></li>
+                <li class="page-btn"><a href="page=4">8</a></li>
+                <li class="page-btn"><a href="page=10" class="this">10</a></li>
+              </ol>
+              <a href="" class="next"><span class="hide-txt">다음페이지</span></a>
+              <a href="" class="last"><span class="hide-txt">마지막페이지</span></a>
+            </div>
+          </section>
+          <section>
+            <pre class="theme-codepen-embed">
+              <code class="language-html">
+                &#x3C;div class=&#x22;board-wrap&#x22;&#x3E;
+                &#x3C;table&#x3E;
+                  &#x3C;colgroup&#x3E;
+                    &#x3C;col width=&#x22;90px&#x22; /&#x3E;
+                    &#x3C;col width=&#x22;auto&#x22; /&#x3E;
+                    &#x3C;col width=&#x22;150px&#x22; /&#x3E;
+                  &#x3C;/colgroup&#x3E;
+                  &#x3C;thead&#x3E;
+                    &#x3C;tr&#x3E;
+                      &#x3C;th scope=&#x22;col&#x22;&#x3E;&#xD0C0;&#xC774;&#xD2C0;&#x3C;/th&#x3E;
+                      &#x3C;th scope=&#x22;col&#x22;&#x3E;&#xD0C0;&#xC774;&#xD2C0;&#x3C;/th&#x3E;
+                      &#x3C;th scope=&#x22;col&#x22;&#x3E;&#xD0C0;&#xC774;&#xD2C0;&#x3C;/th&#x3E;
+                    &#x3C;/tr&#x3E;
+                  &#x3C;/thead&#x3E;
+                  &#x3C;tbody&#x3E;
+                    &#x3C;tr&#x3E;
+                      &#x3C;td scope=&#x22;row&#x22;&#x3E;&#x3C;span class=&#x22;badge&#x22;&#x3E;&#xACF5;&#xC9C0;&#x3C;/span&#x3E;&#x3C;/td&#x3E;
+                      &#x3C;td&#x3E;
+                        &#x3C;a href=&#x22;&#x22; title=&#x22;&#xACF5;&#xC9C0;&#xC0AC;&#xD56D; &#xC81C;&#xBAA9;&#x22;&#x3E;&#x3C;span class=&#x22;category&#x22;&#x3E;[&#xC548;&#xB0B4;]&#x3C;/span&#x3E;&#xC11C;&#xBE44;&#xC2A4; &#xC624;&#xD508; &#xC548;&#xB0B4;&#x3C;/a&#x3E;
+                      &#x3C;/td&#x3E;
+                      &#x3C;td&#x3E;2013-08-17&#x3C;/td&#x3E;
+                    &#x3C;/tr&#x3E;
+  
+                    &#x3C;tr&#x3E;
+                      &#x3C;td scope=&#x22;row&#x22;&#x3E;1.&#x3C;/td&#x3E;
+                      &#x3C;td&#x3E;
+                        &#x3C;a href=&#x22;&#x22; title=&#x22;&#xACF5;&#xC9C0;&#xC0AC;&#xD56D; &#xC81C;&#xBAA9;&#x22;&#x3E;&#x3C;span class=&#x22;category&#x22;&#x3E;[&#xC548;&#xB0B4;]&#x3C;/span&#x3E;&#xC11C;&#xBE44;&#xC2A4; &#xC624;&#xD508; &#xC548;&#xB0B4;&#x3C;/a&#x3E;
+                      &#x3C;/td&#x3E;
+                      &#x3C;td&#x3E;2013-08-17&#x3C;/td&#x3E;
+                    &#x3C;/tr&#x3E;
+  
+                    &#x3C;tr&#x3E;
+                      &#x3C;td scope=&#x22;row&#x22;&#x3E;2.&#x3C;/td&#x3E;
+                      &#x3C;td&#x3E;
+                        &#x3C;a href=&#x22;&#x22; title=&#x22;&#xACF5;&#xC9C0;&#xC0AC;&#xD56D; &#xC81C;&#xBAA9;&#x22;&#x3E;&#x3C;span class=&#x22;category&#x22;&#x3E;[&#xC548;&#xB0B4;]&#x3C;/span&#x3E;&#xC11C;&#xBE44;&#xC2A4; &#xC624;&#xD508; &#xC548;&#xB0B4;&#x3C;/a&#x3E;
+                      &#x3C;/td&#x3E;
+                      &#x3C;td&#x3E;2013-08-17&#x3C;/td&#x3E;
+                    &#x3C;/tr&#x3E;
+  
+                    &#x3C;tr&#x3E;
+                      &#x3C;td scope=&#x22;row&#x22;&#x3E;&#x3C;/td&#x3E;
+                      &#x3C;td&#x3E;&#x3C;a href=&#x22;&#x22; title=&#x22;&#xACF5;&#xC9C0;&#xC0AC;&#xD56D; &#xC81C;&#xBAA9;&#x22;&#x3E;&#x3C;/a&#x3E;&#x3C;/td&#x3E;
+                      &#x3C;td&#x3E;2013-08-17&#x3C;/td&#x3E;
+                    &#x3C;/tr&#x3E;
+                  &#x3C;/tbody&#x3E;
+                &#x3C;/table&#x3E;
+              &#x3C;/div&#x3E;
+  
+              &#x3C;div role=&#x22;navigation&#x22; class=&#x22;paging-wrap&#x22;&#x3E;
+                &#x3C;a href=&#x22;&#x22; class=&#x22;first&#x22;&#x3E;&#x3C;span class=&#x22;hide-txt&#x22;&#x3E;&#xCCAB;&#xD398;&#xC774;&#xC9C0;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                &#x3C;a href=&#x22;&#x22; class=&#x22;prev&#x22;&#x3E;&#x3C;span class=&#x22;hide-txt&#x22;&#x3E;&#xC774;&#xC804;&#xD398;&#xC774;&#xC9C0;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                &#x3C;ol&#x3E;
+                  &#x3C;li class=&#x22;page-btn&#x22;&#x3E;&#x3C;a href=&#x22;page=1&#x22; class=&#x22;this&#x22;&#x3E;1&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                  &#x3C;li class=&#x22;page-btn&#x22;&#x3E;&#x3C;a href=&#x22;page=2&#x22;&#x3E;2&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                  &#x3C;li class=&#x22;page-btn&#x22;&#x3E;&#x3C;a href=&#x22;page=3&#x22;&#x3E;3&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                  &#x3C;li class=&#x22;page-btn&#x22;&#x3E;&#x3C;a href=&#x22;page=4&#x22;&#x3E;4&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                  &#x3C;li class=&#x22;page-btn&#x22;&#x3E;&#x3C;a href=&#x22;page=4&#x22;&#x3E;4&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ol&#x3E;
+                &#x3C;a href=&#x22;&#x22; class=&#x22;next&#x22;&#x3E;&#x3C;span class=&#x22;hide-txt&#x22;&#x3E;&#xB2E4;&#xC74C;&#xD398;&#xC774;&#xC9C0;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                &#x3C;a href=&#x22;&#x22; class=&#x22;last&#x22;&#x3E;&#x3C;span class=&#x22;hide-txt&#x22;&#x3E;&#xB9C8;&#xC9C0;&#xB9C9;&#xD398;&#xC774;&#xC9C0;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+              &#x3C;/div&#x3E;
+              </code>
+            </pre>
+          </section>
+
+          <section>
+            <div class="board-view-wrap">
+              <div class="board-title">
+                <p class="title"><span class="category">[안내]</span>8월 동탄매매센터 휴무 일정 안내</p>
+                <div class="writer-info">
+                  <div class="name">작성자</div>
+                  <div class="date">2023-08-28</div>
+                  <div class="file">
+                    <a href="">파일명.확장자</a>
+                    <a href="">파일명.확장자</a>
+                    <a href="">파일명.확장자</a>
+                  </div>
+                </div>
+                <div class="file-box">
+                  <a href="">파일명.확장자</a>
+                  <a href=""><i class="icon excel"></i>파일명.xls</a>
+                  <a href=""><i class="icon pdf"></i>파일명.pdf</a>
+                  <a href=""><i class="icon hwp"></i>파일명.hwp</a>
+                  <a href=""><i class="icon img"></i>파일명.jpg</a>
+                  <a href=""><i class="icon zip"></i>파일명.zip</a>
+                </div>
+              </div>
+              <div class="board-content">
+                <p>안녕하세요. SK 렌터카 중고차입니다.</p>
+                <p></p>
+                <p>2023년 05월 02일 오토인사이드 시스템 점검에 따라 사이트 이용이 일시 중지될 예정입니다.</p>
+                <p></p>
+                <p>사이트 점검</p>
+                <p>일자 : 2023년 05월 02일(화)</p>
+                <p>시간 : 07:00 ~ 08:00</p>
+                <p></p>
+                <p>해당시간내에 사이트 접속이 원할하지 않으니 이용에 참고해주시기 바랍니다.</p>
+                <p>서비스 이용에 불편을 드려 죄송합니다.</p>
+              </div>
+              <div class="file-box-bottom">
+                <div class="title"><i class="icon"></i>첨부파일 :</div>
+                <div class="file-list">
+                  <a href="">파일명.확장자</a>
+                  <a href=""><i class="icon excel"></i>파일명.xls</a>
+                  <a href=""><i class="icon pdf"></i>파일명.pdf</a>
+                  <a href=""><i class="icon hwp"></i>파일명.hwp</a>
+                  <a href=""><i class="icon img"></i>파일명.jpg</a>
+                  <a href=""><i class="icon zip"></i>파일명.zip</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="btn-box">
+              <button class="btn-primary">목록</button>
+            </div>
+          </section>
+          <section>
+            <pre class="theme-codepen-embed">
+              <code class="language-html">
+&#x3C;div class=&#x22;board-view-wrap&#x22;&#x3E;
+  &#x3C;div class=&#x22;board-title&#x22;&#x3E;
+    &#x3C;p class=&#x22;title&#x22;&#x3E;&#x3C;span class=&#x22;category&#x22;&#x3E;[&#xC548;&#xB0B4;]&#x3C;/span&#x3E;8&#xC6D4; &#xB3D9;&#xD0C4;&#xB9E4;&#xB9E4;&#xC13C;&#xD130; &#xD734;&#xBB34; &#xC77C;&#xC815; &#xC548;&#xB0B4;&#x3C;/p&#x3E;
+    &#x3C;div class=&#x22;writer-info&#x22;&#x3E;
+      &#x3C;div class=&#x22;name&#x22;&#x3E;&#xC791;&#xC131;&#xC790;&#x3C;/div&#x3E;
+      &#x3C;div class=&#x22;date&#x22;&#x3E;2023-08-28&#x3C;/div&#x3E;
+      &#x3C;div class=&#x22;file&#x22;&#x3E;
+        &#x3C;a href=&#x22;&#x22;&#x3E;&#xD30C;&#xC77C;&#xBA85;.&#xD655;&#xC7A5;&#xC790;&#x3C;/a&#x3E;
+        &#x3C;a href=&#x22;&#x22;&#x3E;&#xD30C;&#xC77C;&#xBA85;.&#xD655;&#xC7A5;&#xC790;&#x3C;/a&#x3E;
+        &#x3C;a href=&#x22;&#x22;&#x3E;&#xD30C;&#xC77C;&#xBA85;.&#xD655;&#xC7A5;&#xC790;&#x3C;/a&#x3E;
+      &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;file-box&#x22;&#x3E;
+      &#x3C;a href=&#x22;&#x22;&#x3E;&#xD30C;&#xC77C;&#xBA85;.&#xD655;&#xC7A5;&#xC790;&#x3C;/a&#x3E;
+      &#x3C;a href=&#x22;&#x22;&#x3E;&#x3C;i class=&#x22;icon excel&#x22;&#x3E;&#x3C;/i&#x3E;&#xD30C;&#xC77C;&#xBA85;.xls&#x3C;/a&#x3E;
+      &#x3C;a href=&#x22;&#x22;&#x3E;&#x3C;i class=&#x22;icon pdf&#x22;&#x3E;&#x3C;/i&#x3E;&#xD30C;&#xC77C;&#xBA85;.pdf&#x3C;/a&#x3E;
+      &#x3C;a href=&#x22;&#x22;&#x3E;&#x3C;i class=&#x22;icon hwp&#x22;&#x3E;&#x3C;/i&#x3E;&#xD30C;&#xC77C;&#xBA85;.hwp&#x3C;/a&#x3E;
+      &#x3C;a href=&#x22;&#x22;&#x3E;&#x3C;i class=&#x22;icon img&#x22;&#x3E;&#x3C;/i&#x3E;&#xD30C;&#xC77C;&#xBA85;.jpg&#x3C;/a&#x3E;
+      &#x3C;a href=&#x22;&#x22;&#x3E;&#x3C;i class=&#x22;icon zip&#x22;&#x3E;&#x3C;/i&#x3E;&#xD30C;&#xC77C;&#xBA85;.zip&#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+  &#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;board-content&#x22;&#x3E;
+    &#x3C;p&#x3E;&#xC548;&#xB155;&#xD558;&#xC138;&#xC694;. SK &#xB80C;&#xD130;&#xCE74; &#xC911;&#xACE0;&#xCC28;&#xC785;&#xB2C8;&#xB2E4;.&#x3C;/p&#x3E;
+    &#x3C;p&#x3E;&#x3C;/p&#x3E;
+    &#x3C;p&#x3E;2023&#xB144; 05&#xC6D4; 02&#xC77C; &#xC624;&#xD1A0;&#xC778;&#xC0AC;&#xC774;&#xB4DC; &#xC2DC;&#xC2A4;&#xD15C; &#xC810;&#xAC80;&#xC5D0; &#xB530;&#xB77C; &#xC0AC;&#xC774;&#xD2B8; &#xC774;&#xC6A9;&#xC774; &#xC77C;&#xC2DC; &#xC911;&#xC9C0;&#xB420; &#xC608;&#xC815;&#xC785;&#xB2C8;&#xB2E4;.&#x3C;/p&#x3E;
+    &#x3C;p&#x3E;&#x3C;/p&#x3E;
+    &#x3C;p&#x3E;&#xC0AC;&#xC774;&#xD2B8; &#xC810;&#xAC80;&#x3C;/p&#x3E;
+    &#x3C;p&#x3E;&#xC77C;&#xC790; : 2023&#xB144; 05&#xC6D4; 02&#xC77C;(&#xD654;)&#x3C;/p&#x3E;
+    &#x3C;p&#x3E;&#xC2DC;&#xAC04; : 07:00 ~ 08:00&#x3C;/p&#x3E;
+    &#x3C;p&#x3E;&#x3C;/p&#x3E;
+    &#x3C;p&#x3E;&#xD574;&#xB2F9;&#xC2DC;&#xAC04;&#xB0B4;&#xC5D0; &#xC0AC;&#xC774;&#xD2B8; &#xC811;&#xC18D;&#xC774; &#xC6D0;&#xD560;&#xD558;&#xC9C0; &#xC54A;&#xC73C;&#xB2C8; &#xC774;&#xC6A9;&#xC5D0; &#xCC38;&#xACE0;&#xD574;&#xC8FC;&#xC2DC;&#xAE30; &#xBC14;&#xB78D;&#xB2C8;&#xB2E4;.&#x3C;/p&#x3E;
+    &#x3C;p&#x3E;&#xC11C;&#xBE44;&#xC2A4; &#xC774;&#xC6A9;&#xC5D0; &#xBD88;&#xD3B8;&#xC744; &#xB4DC;&#xB824; &#xC8C4;&#xC1A1;&#xD569;&#xB2C8;&#xB2E4;.&#x3C;/p&#x3E;
+  &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;div class=&#x22;btn-box&#x22;&#x3E;
+  &#x3C;button class=&#x22;btn-primary&#x22;&#x3E;&#xBAA9;&#xB85D;&#x3C;/button&#x3E;
+&#x3C;/div&#x3E;
+              </code>
+            </pre>
+          </section>
+
+          <section>
+            <div class="faq-wrap">
+              <ul>
+                <li class="active">
+                  <div class="faq-box">
+                    <div class="q-box">
+                      <a href=""><span class="category">[다이렉트]</span><span class="subject">본인확인은 왜 해야하나요?</span></a>
+                    </div>
+                    <div class="a-box">
+                      <p>SK렌터카 다이렉트는 본인확인과 신용심사를 통해 고객님에게 맞는 정확한 견적과 렌탈료를 제공합니다.</p>
+                      <p>타사와 달리 첫 화면에 렌탈료가 노출되지 않는 건 고객님께 정확한 렌탈료를 빠르게 제공하기 위한 목적입니다.</p>
+                      <p>또한 금융사와 달리 신용조회를 반복하여도 신용등급에는 영향을 미치지 않으니 걱정하지 마세요.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="active">
+                  <div class="faq-box">
+                    <div class="q-box">
+                      <a href=""
+                        ><span class="category">[다이렉트]</span
+                        ><span class="subject"
+                          >본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?본인확인은 왜
+                          해야하나요?본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?</span
+                        ></a
+                      >
+                    </div>
+                    <div class="a-box">
+                      <p>SK렌터카 다이렉트는 본인확인과 신용심사를 통해 고객님에게 맞는 정확한 견적과 렌탈료를 제공합니다.</p>
+                      <p>타사와 달리 첫 화면에 렌탈료가 노출되지 않는 건 고객님께 정확한 렌탈료를 빠르게 제공하기 위한 목적입니다.</p>
+                      <p>또한 금융사와 달리 신용조회를 반복하여도 신용등급에는 영향을 미치지 않으니 걱정하지 마세요.</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="faq-box">
+                    <div class="q-box"><span class="category">[다이렉트]</span>본인확인은 왜 해야하나요?</div>
+                    <div class="a-box">
+                      <p>SK렌터카 다이렉트는 본인확인과 신용심사를 통해 고객님에게 맞는 정확한 견적과 렌탈료를 제공합니다.</p>
+                      <p>타사와 달리 첫 화면에 렌탈료가 노출되지 않는 건 고객님께 정확한 렌탈료를 빠르게 제공하기 위한 목적입니다.</p>
+                      <p>또한 금융사와 달리 신용조회를 반복하여도 신용등급에는 영향을 미치지 않으니 걱정하지 마세요.</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="faq-box">
+                    <div class="q-box"><span class="category">[다이렉트]</span>본인확인은 왜 해야하나요?</div>
+                    <div class="a-box">
+                      <p>SK렌터카 다이렉트는 본인확인과 신용심사를 통해 고객님에게 맞는 정확한 견적과 렌탈료를 제공합니다.</p>
+                      <p>타사와 달리 첫 화면에 렌탈료가 노출되지 않는 건 고객님께 정확한 렌탈료를 빠르게 제공하기 위한 목적입니다.</p>
+                      <p>또한 금융사와 달리 신용조회를 반복하여도 신용등급에는 영향을 미치지 않으니 걱정하지 마세요.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <!-- <pre class="theme-codepen-embed">
+              <code class="language-html"> -->
+
+            <div class="highlight">
+              <pre class="chroma"><code class="language-html" data-lang="html">
+&#x3C;div class=&#x22;faq-wrap&#x22;&#x3E;
+  &#x3C;ul&#x3E;
+    &#x3C;li class=&#x22;active&#x22;&#x3E;
+      &#x3C;div class=&#x22;faq-box&#x22;&#x3E;
+        &#x3C;div class=&#x22;q-box&#x22;&#x3E;
+          &#x3C;a href=&#x22;&#x22;&#x3E;&#x3C;span class=&#x22;category&#x22;&#x3E;[&#xB2E4;&#xC774;&#xB809;&#xD2B8;]&#x3C;/span&#x3E;&#x3C;span class=&#x22;subject&#x22;&#x3E;&#xBCF8;&#xC778;&#xD655;&#xC778;&#xC740; &#xC65C; &#xD574;&#xC57C;&#xD558;&#xB098;&#xC694;?&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;a-box&#x22;&#x3E;
+          &#x3C;p&#x3E;SK&#xB80C;&#xD130;&#xCE74; &#xB2E4;&#xC774;&#xB809;&#xD2B8;&#xB294; &#xBCF8;&#xC778;&#xD655;&#xC778;&#xACFC; &#xC2E0;&#xC6A9;&#xC2EC;&#xC0AC;&#xB97C; &#xD1B5;&#xD574; &#xACE0;&#xAC1D;&#xB2D8;&#xC5D0;&#xAC8C; &#xB9DE;&#xB294; &#xC815;&#xD655;&#xD55C; &#xACAC;&#xC801;&#xACFC; &#xB80C;&#xD0C8;&#xB8CC;&#xB97C; &#xC81C;&#xACF5;&#xD569;&#xB2C8;&#xB2E4;.&#x3C;/p&#x3E;
+          &#x3C;p&#x3E;&#xD0C0;&#xC0AC;&#xC640; &#xB2EC;&#xB9AC; &#xCCAB; &#xD654;&#xBA74;&#xC5D0; &#xB80C;&#xD0C8;&#xB8CC;&#xAC00; &#xB178;&#xCD9C;&#xB418;&#xC9C0; &#xC54A;&#xB294; &#xAC74; &#xACE0;&#xAC1D;&#xB2D8;&#xAED8; &#xC815;&#xD655;&#xD55C; &#xB80C;&#xD0C8;&#xB8CC;&#xB97C; &#xBE60;&#xB974;&#xAC8C; &#xC81C;&#xACF5;&#xD558;&#xAE30; &#xC704;&#xD55C; &#xBAA9;&#xC801;&#xC785;&#xB2C8;&#xB2E4;.&#x3C;/p&#x3E;
+          &#x3C;p&#x3E;&#xB610;&#xD55C; &#xAE08;&#xC735;&#xC0AC;&#xC640; &#xB2EC;&#xB9AC; &#xC2E0;&#xC6A9;&#xC870;&#xD68C;&#xB97C; &#xBC18;&#xBCF5;&#xD558;&#xC5EC;&#xB3C4; &#xC2E0;&#xC6A9;&#xB4F1;&#xAE09;&#xC5D0;&#xB294; &#xC601;&#xD5A5;&#xC744; &#xBBF8;&#xCE58;&#xC9C0; &#xC54A;&#xC73C;&#xB2C8; &#xAC71;&#xC815;&#xD558;&#xC9C0; &#xB9C8;&#xC138;&#xC694;.&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+      &#x3C;/div&#x3E;
+    &#x3C;/li&#x3E;
+    &#x3C;li class=&#x22;active&#x22;&#x3E;
+      &#x3C;div class=&#x22;faq-box&#x22;&#x3E;
+        &#x3C;div class=&#x22;q-box&#x22;&#x3E;
+          &#x3C;a href=&#x22;&#x22;
+            &#x3E;&#x3C;span class=&#x22;category&#x22;&#x3E;[&#xB2E4;&#xC774;&#xB809;&#xD2B8;]&#x3C;/span
+            &#x3E;&#x3C;span class=&#x22;subject&#x22;
+              &#x3E;&#xBCF8;&#xC778;&#xD655;&#xC778;&#xC740; &#xC65C; &#xD574;&#xC57C;&#xD558;&#xB098;&#xC694;?&#xBCF8;&#xC778;&#xD655;&#xC778;&#xC740; &#xC65C; &#xD574;&#xC57C;&#xD558;&#xB098;&#xC694;?&#xBCF8;&#xC778;&#xD655;&#xC778;&#xC740; &#xC65C; &#xD574;&#xC57C;&#xD558;&#xB098;&#xC694;?&#xBCF8;&#xC778;&#xD655;&#xC778;&#xC740; &#xC65C; &#xD574;&#xC57C;&#xD558;&#xB098;&#xC694;?&#xBCF8;&#xC778;&#xD655;&#xC778;&#xC740; &#xC65C; &#xD574;&#xC57C;&#xD558;&#xB098;&#xC694;?&#xBCF8;&#xC778;&#xD655;&#xC778;&#xC740; &#xC65C; &#xD574;&#xC57C;&#xD558;&#xB098;&#xC694;?&#xBCF8;&#xC778;&#xD655;&#xC778;&#xC740; &#xC65C;
+              &#xD574;&#xC57C;&#xD558;&#xB098;&#xC694;?&#xBCF8;&#xC778;&#xD655;&#xC778;&#xC740; &#xC65C; &#xD574;&#xC57C;&#xD558;&#xB098;&#xC694;?&#xBCF8;&#xC778;&#xD655;&#xC778;&#xC740; &#xC65C; &#xD574;&#xC57C;&#xD558;&#xB098;&#xC694;?&#xBCF8;&#xC778;&#xD655;&#xC778;&#xC740; &#xC65C; &#xD574;&#xC57C;&#xD558;&#xB098;&#xC694;?&#xBCF8;&#xC778;&#xD655;&#xC778;&#xC740; &#xC65C; &#xD574;&#xC57C;&#xD558;&#xB098;&#xC694;?&#xBCF8;&#xC778;&#xD655;&#xC778;&#xC740; &#xC65C; &#xD574;&#xC57C;&#xD558;&#xB098;&#xC694;?&#xBCF8;&#xC778;&#xD655;&#xC778;&#xC740; &#xC65C; &#xD574;&#xC57C;&#xD558;&#xB098;&#xC694;?&#x3C;/span
+            &#x3E;&#x3C;/a
+          &#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;a-box&#x22;&#x3E;
+          &#x3C;p&#x3E;SK&#xB80C;&#xD130;&#xCE74; &#xB2E4;&#xC774;&#xB809;&#xD2B8;&#xB294; &#xBCF8;&#xC778;&#xD655;&#xC778;&#xACFC; &#xC2E0;&#xC6A9;&#xC2EC;&#xC0AC;&#xB97C; &#xD1B5;&#xD574; &#xACE0;&#xAC1D;&#xB2D8;&#xC5D0;&#xAC8C; &#xB9DE;&#xB294; &#xC815;&#xD655;&#xD55C; &#xACAC;&#xC801;&#xACFC; &#xB80C;&#xD0C8;&#xB8CC;&#xB97C; &#xC81C;&#xACF5;&#xD569;&#xB2C8;&#xB2E4;.&#x3C;/p&#x3E;
+          &#x3C;p&#x3E;&#xD0C0;&#xC0AC;&#xC640; &#xB2EC;&#xB9AC; &#xCCAB; &#xD654;&#xBA74;&#xC5D0; &#xB80C;&#xD0C8;&#xB8CC;&#xAC00; &#xB178;&#xCD9C;&#xB418;&#xC9C0; &#xC54A;&#xB294; &#xAC74; &#xACE0;&#xAC1D;&#xB2D8;&#xAED8; &#xC815;&#xD655;&#xD55C; &#xB80C;&#xD0C8;&#xB8CC;&#xB97C; &#xBE60;&#xB974;&#xAC8C; &#xC81C;&#xACF5;&#xD558;&#xAE30; &#xC704;&#xD55C; &#xBAA9;&#xC801;&#xC785;&#xB2C8;&#xB2E4;.&#x3C;/p&#x3E;
+          &#x3C;p&#x3E;&#xB610;&#xD55C; &#xAE08;&#xC735;&#xC0AC;&#xC640; &#xB2EC;&#xB9AC; &#xC2E0;&#xC6A9;&#xC870;&#xD68C;&#xB97C; &#xBC18;&#xBCF5;&#xD558;&#xC5EC;&#xB3C4; &#xC2E0;&#xC6A9;&#xB4F1;&#xAE09;&#xC5D0;&#xB294; &#xC601;&#xD5A5;&#xC744; &#xBBF8;&#xCE58;&#xC9C0; &#xC54A;&#xC73C;&#xB2C8; &#xAC71;&#xC815;&#xD558;&#xC9C0; &#xB9C8;&#xC138;&#xC694;.&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+      &#x3C;/div&#x3E;
+    &#x3C;/li&#x3E;
+    &#x3C;li&#x3E;
+      &#x3C;div class=&#x22;faq-box&#x22;&#x3E;
+        &#x3C;div class=&#x22;q-box&#x22;&#x3E;&#x3C;span class=&#x22;category&#x22;&#x3E;[&#xB2E4;&#xC774;&#xB809;&#xD2B8;]&#x3C;/span&#x3E;&#xBCF8;&#xC778;&#xD655;&#xC778;&#xC740; &#xC65C; &#xD574;&#xC57C;&#xD558;&#xB098;&#xC694;?&#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;a-box&#x22;&#x3E;
+          &#x3C;p&#x3E;SK&#xB80C;&#xD130;&#xCE74; &#xB2E4;&#xC774;&#xB809;&#xD2B8;&#xB294; &#xBCF8;&#xC778;&#xD655;&#xC778;&#xACFC; &#xC2E0;&#xC6A9;&#xC2EC;&#xC0AC;&#xB97C; &#xD1B5;&#xD574; &#xACE0;&#xAC1D;&#xB2D8;&#xC5D0;&#xAC8C; &#xB9DE;&#xB294; &#xC815;&#xD655;&#xD55C; &#xACAC;&#xC801;&#xACFC; &#xB80C;&#xD0C8;&#xB8CC;&#xB97C; &#xC81C;&#xACF5;&#xD569;&#xB2C8;&#xB2E4;.&#x3C;/p&#x3E;
+          &#x3C;p&#x3E;&#xD0C0;&#xC0AC;&#xC640; &#xB2EC;&#xB9AC; &#xCCAB; &#xD654;&#xBA74;&#xC5D0; &#xB80C;&#xD0C8;&#xB8CC;&#xAC00; &#xB178;&#xCD9C;&#xB418;&#xC9C0; &#xC54A;&#xB294; &#xAC74; &#xACE0;&#xAC1D;&#xB2D8;&#xAED8; &#xC815;&#xD655;&#xD55C; &#xB80C;&#xD0C8;&#xB8CC;&#xB97C; &#xBE60;&#xB974;&#xAC8C; &#xC81C;&#xACF5;&#xD558;&#xAE30; &#xC704;&#xD55C; &#xBAA9;&#xC801;&#xC785;&#xB2C8;&#xB2E4;.&#x3C;/p&#x3E;
+          &#x3C;p&#x3E;&#xB610;&#xD55C; &#xAE08;&#xC735;&#xC0AC;&#xC640; &#xB2EC;&#xB9AC; &#xC2E0;&#xC6A9;&#xC870;&#xD68C;&#xB97C; &#xBC18;&#xBCF5;&#xD558;&#xC5EC;&#xB3C4; &#xC2E0;&#xC6A9;&#xB4F1;&#xAE09;&#xC5D0;&#xB294; &#xC601;&#xD5A5;&#xC744; &#xBBF8;&#xCE58;&#xC9C0; &#xC54A;&#xC73C;&#xB2C8; &#xAC71;&#xC815;&#xD558;&#xC9C0; &#xB9C8;&#xC138;&#xC694;.&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+      &#x3C;/div&#x3E;
+    &#x3C;/li&#x3E;
+    &#x3C;li&#x3E;
+      &#x3C;div class=&#x22;faq-box&#x22;&#x3E;
+        &#x3C;div class=&#x22;q-box&#x22;&#x3E;&#x3C;span class=&#x22;category&#x22;&#x3E;[&#xB2E4;&#xC774;&#xB809;&#xD2B8;]&#x3C;/span&#x3E;&#xBCF8;&#xC778;&#xD655;&#xC778;&#xC740; &#xC65C; &#xD574;&#xC57C;&#xD558;&#xB098;&#xC694;?&#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;a-box&#x22;&#x3E;
+          &#x3C;p&#x3E;SK&#xB80C;&#xD130;&#xCE74; &#xB2E4;&#xC774;&#xB809;&#xD2B8;&#xB294; &#xBCF8;&#xC778;&#xD655;&#xC778;&#xACFC; &#xC2E0;&#xC6A9;&#xC2EC;&#xC0AC;&#xB97C; &#xD1B5;&#xD574; &#xACE0;&#xAC1D;&#xB2D8;&#xC5D0;&#xAC8C; &#xB9DE;&#xB294; &#xC815;&#xD655;&#xD55C; &#xACAC;&#xC801;&#xACFC; &#xB80C;&#xD0C8;&#xB8CC;&#xB97C; &#xC81C;&#xACF5;&#xD569;&#xB2C8;&#xB2E4;.&#x3C;/p&#x3E;
+          &#x3C;p&#x3E;&#xD0C0;&#xC0AC;&#xC640; &#xB2EC;&#xB9AC; &#xCCAB; &#xD654;&#xBA74;&#xC5D0; &#xB80C;&#xD0C8;&#xB8CC;&#xAC00; &#xB178;&#xCD9C;&#xB418;&#xC9C0; &#xC54A;&#xB294; &#xAC74; &#xACE0;&#xAC1D;&#xB2D8;&#xAED8; &#xC815;&#xD655;&#xD55C; &#xB80C;&#xD0C8;&#xB8CC;&#xB97C; &#xBE60;&#xB974;&#xAC8C; &#xC81C;&#xACF5;&#xD558;&#xAE30; &#xC704;&#xD55C; &#xBAA9;&#xC801;&#xC785;&#xB2C8;&#xB2E4;.&#x3C;/p&#x3E;
+          &#x3C;p&#x3E;&#xB610;&#xD55C; &#xAE08;&#xC735;&#xC0AC;&#xC640; &#xB2EC;&#xB9AC; &#xC2E0;&#xC6A9;&#xC870;&#xD68C;&#xB97C; &#xBC18;&#xBCF5;&#xD558;&#xC5EC;&#xB3C4; &#xC2E0;&#xC6A9;&#xB4F1;&#xAE09;&#xC5D0;&#xB294; &#xC601;&#xD5A5;&#xC744; &#xBBF8;&#xCE58;&#xC9C0; &#xC54A;&#xC73C;&#xB2C8; &#xAC71;&#xC815;&#xD558;&#xC9C0; &#xB9C8;&#xC138;&#xC694;.&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+      &#x3C;/div&#x3E;
+    &#x3C;/li&#x3E;
+  &#x3C;/ul&#x3E;
+&#x3C;/div&#x3E;
+              </code>
+            </pre>
+            </div>
+          </section>
+        </article>
+
+        <!-- quick -->
+        <article class="quick" w3-include-html="./include/quick.html"></article>
+        <!-- //quick -->
+      </main>
+
+      <!-- footer -->
+      <footer w3-include-html="./include/footer.html"></footer>
+      <!-- //footer -->
+    </div>
+  </body>
+  <script src="../../../assets/pc/js/ui.js"></script>
+
+  <script>
+    includeHTML();
+  </script>
+</html>

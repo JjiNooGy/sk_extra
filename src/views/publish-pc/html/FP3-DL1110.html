@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+  <link href="../../img/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" type="text/css" href="../../../assets/pc/css/fonts.css" />
+  <link rel="stylesheet" type="text/css" href="../../../assets/pc/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../../../assets/pc/css/style2.css" />
+  <script src="include.js"></script>
+</head>
+
+<body>
+  <div class="wrap consignment person2">
+    <!-- headerWrap -->
+    <div class="header_wrap" w3-include-html="./include/header.html"></div>
+    <!-- headerWrap -->
+
+    <main>
+      <article>
+        <section>
+          <div class="page-title title-wrap">
+            <div class="title">탁송관리</div>
+            <div class="title-desc">SK 렌터카의 탁송관리 시스템입니다.</div>
+          </div>
+        </section>
+
+        <section>
+          <!-- search-wrap -->
+          <div class="search-wrap">
+            <div class="forms-wrap">
+              <ul class="forms-box">
+                <li>
+                  <div class="form">
+                    <div class="form-control">
+                      <div class="form-control-label">
+                        <span>요청일</span>
+                      </div>
+                      <div class="form-control-container flex-start w450">
+                        <div class="form-control-content">
+                          <div class="calendar-wrap">
+                            <input class="cal w215" type="date" id="date" data-placeholder="" required
+                              aria-required="true" value={startDateValue} className={styles.selectDay}
+                              onChange={StartDateValueHandler}></input>
+                            <span class="bar">~</span>
+                            <input class="cal w215" type="date" id="date" data-placeholder="" required
+                              aria-required="true" value={startDateValue} className={styles.selectDay}
+                              onChange={StartDateValueHandler}></input>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="form">
+                    <div class="form-control">
+                      <div class="form-control-label">
+                        <span>차량번호</span>
+                      </div>
+                      <div class="form-control-container">
+                        <div class="form-control-content">
+                          <div class="form-control-input">
+                            <input type="search" placeholder="" />
+                            <button class="btnClear"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="form">
+                    <div class="form-control">
+                      <div class="form-control-label">
+                        <span>차명</span>
+                      </div>
+                      <div class="form-control-container">
+                        <div class="form-control-content">
+                          <div class="form-control-input">
+                            <input type="search" placeholder="" />
+                            <button class="btnClear"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="forms-box">
+                <li>
+                  <div class="form">
+                    <div class="form-control">
+                      <div class="form-control-label">
+                        <span>탁송방식</span>
+                        <!-- <span class="req">필수입력값</span> -->
+                      </div>
+                      <div class="form-control-container">
+                        <div class="form-control-content flex select-group w104">
+                          <div class="select-wrap">
+                            <div class="select-wrap">
+                              <span class="select-box w165">
+                                <select name="privacy" id="policyinfoList" class="option01">
+                                  <option value="" selected="">선택</option>
+                                  <option value="001">001</option>
+                                  <option value="002">002</option>
+                                  <option value="003">003</option>
+                                </select>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="form">
+                    <div class="form-control">
+                      <div class="form-control-label">
+                        <span>출발지</span>
+                      </div>
+                      <div class="form-control-container">
+                        <div class="form-control-content flex select-group">
+                          <div class="select-wrap">
+                            <span class="select-box w165">
+                              <select name="privacy" id="policyinfoList" class="option01">
+                                <option value="" selected="">선택</option>
+                                <option value="001">001</option>
+                                <option value="002">002</option>
+                                <option value="003">003</option>
+                              </select>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="form">
+                    <div class="form-control">
+                      <div class="form-control-label">
+                        <span>목적지</span>
+                      </div>
+                      <div class="form-control-container">
+                        <div class="form-control-content flex select-group">
+                          <div class="select-wrap">
+                            <span class="select-box w165">
+                              <select name="select01" id="select" class="option01">
+                                <option value="" selected="">선택</option>
+                                <option value="001">001</option>
+                                <option value="002">002</option>
+                                <option value="003">003</option>
+                              </select>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="form">
+                    <div class="form-control">
+                      <div class="form-control-label">
+                        <span>상태</span>
+                      </div>
+                      <div class="form-control-container">
+                        <div class="form-control-content">
+                          <div class="form-control-input">
+                            <input class="w165" type="search" placeholder="" />
+                            <button class="btnClear"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <ul class="button-wrap">
+              <li class="reset">
+                <p>초기화</p>
+              </li>
+              <li class="search">
+                <p>검색</p>
+              </li>
+            </ul>
+          </div>
+          <!-- //search-wrap -->
+        </section>
+
+        <section>
+          <div class="form status">
+
+            <!-- btn-wrap -->
+            <div class="btn-wrap">
+              <div class="btn-box left">
+                <span class="num">총 조회
+                  <strong class="stress">3</strong>건
+                </span>
+              </div>
+              <div class="btn-box right">
+                <button class="btn-default">전체선택</button>
+                <button class="btn-default all">일괄 출발</button>
+                <button class="btn-default all">일괄 TP배정</button>
+                <button class="btn-default save">저장</button>
+              </div>
+            </div>
+            <!-- //btn-wrap -->
+
+            <!-- status-wrap -->
+            <div class="status-wrap">
+              <!-- status-box -->
+              <div class="status-box">
+                <!-- checkbox-wrap -->
+                <div class="checkbox-wrap">
+                  <div class="check-radio">
+                    <input type="checkbox" id="checkbox1">
+                    <label for="checkbox1"></label>
+                  </div>
+                </div>
+                <!-- //checkbox-wrap -->
+                <!-- status-view -->
+                <div class="status-view">
+                  <div class="badge-wrap">
+                    <span class="badge type03">출발</span>
+                    <span class="car-num">134허2366</span>
+                    <span class="car-num-old">(구: 123허2455)</span>
+                    <span class="car-name">쏘나타</span>
+                  </div>
+                  <div class="data-wrap">
+                    <span class="title">출발지</span>
+                    <span class="cont">안성통합매매센터</span>
+                    <span class="title">목적지</span>
+                    <span class="cont">SK인천수출단지 (서울시 성동구 여의도동 23-1 234)</span>
+                    <span class="title">인수자</span>
+                    <span class="cont">홍길동 (010-0000-0000)</span>
+                    <span class="title">탁송요청일</span>
+                    <span class="cont">2023.07.23</span>
+                  </div>
+                </div>
+                <!-- //status-view -->
+                <!-- btn-wrap -->
+                <div class="btn-wrap">
+                  <button class="btn-primary">출발</button>
+                </div>
+                <!-- //btn-wrap -->
+              </div>
+              <!-- //status-box -->
+
+              <!-- forms-wrap -->
+              <div class="forms-wrap">
+                <ul class="forms-box">
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>탁송방식</span>
+                          <!-- <span class="req">필수입력값</span> -->
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content flex select-group w104">
+                            <div class="select-wrap">
+                              <span class="select-box w200">
+                                <select name="privacy" id="policyinfoList" class="option01">
+                                  <option value="" selected="">선택</option>
+                                  <option value="001">001</option>
+                                  <option value="002">002</option>
+                                  <option value="003">003</option>
+                                </select>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>출발시간</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content flex date-group">
+                            <div class="calendar-wrap">
+                              <input class="cal" type="date" id="date" data-placeholder="" required aria-required="true"
+                                value={startDateValue} className={styles.selectDay}
+                                onChange={StartDateValueHandler}></input>
+                            </div>
+                            <div class="select-wrap date">
+                              <span class="select-box w65">
+                                <select name="select01" id="select" class="option01">
+                                  <option value="00" selected="">00</option>
+                                  <option value="01">01</option>
+                                  <option value="02">02</option>
+                                  <option value="03">03</option>
+                                </select>
+                              </span>
+                              <span class="date-bar">:</span>
+                              <span class="select-box w65">
+                                <select name="select01" id="select" class="option01">
+                                  <option value="00" selected="">00</option>
+                                  <option value="01">01</option>
+                                  <option value="02">02</option>
+                                  <option value="03">03</option>
+                                </select>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>도착예정</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content flex date-group">
+                            <div class="calendar-wrap">
+                              <input class="cal" type="date" id="date" data-placeholder="" required aria-required="true"
+                                value={startDateValue} className={styles.selectDay}
+                                onChange={StartDateValueHandler}></input>
+                            </div>
+                            <div class="select-wrap date">
+                              <span class="select-box w65">
+                                <select name="select01" id="select" class="option01">
+                                  <option value="00" selected="">00</option>
+                                  <option value="01">01</option>
+                                  <option value="02">02</option>
+                                  <option value="03">03</option>
+                                </select>
+                              </span>
+                              <span class="date-bar">:</span>
+                              <span class="select-box w65">
+                                <select name="select01" id="select" class="option01">
+                                  <option value="00" selected="">00</option>
+                                  <option value="01">01</option>
+                                  <option value="02">02</option>
+                                  <option value="03">03</option>
+                                </select>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="forms-box">
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>탁송기사</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content flex name-group">
+                            <div class="form-control-input">
+                              <input type="search" placeholder="이름" class="w50" />
+                              <button class="btnClear"></button>
+                            </div>
+                            <div class="form-control-input">
+                              <input type="search" placeholder="연락처" class="w122" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>주유비</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input number">
+                              <input class="w294 stress" type="search" value="30,000" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>탁송비</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input number">
+                              <input class="w294 stress" type="search" value="30,000" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>비고</span>
+                        </div>
+                        <div class="form-control-container flex-start">
+                          <div class="form-control-content">
+                            <div class="form-control-input">
+                              <input type="search" placeholder="" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- //forms-wrap -->
+            </div>
+            <!-- //status-wrap -->
+
+            <!-- status-wrap -->
+            <div class="status-wrap">
+              <!-- status-box -->
+              <div class="status-box">
+                <!-- checkbox-wrap -->
+                <div class="checkbox-wrap">
+                  <div class="check-radio">
+                    <input type="checkbox" id="checkbox2">
+                    <label for="checkbox2"></label>
+                  </div>
+                </div>
+                <!-- //checkbox-wrap -->
+                <!-- status-view -->
+                <div class="status-view">
+                  <div class="badge-wrap">
+                    <span class="badge type01">요청</span>
+                    <span class="car-num">134허2366</span>
+                    <span class="car-num-old">(구: 123허2455)</span>
+                    <span class="car-name">쏘나타</span>
+                  </div>
+                  <div class="data-wrap">
+                    <span class="title">출발지</span>
+                    <span class="cont">안성통합매매센터</span>
+                    <span class="title">목적지</span>
+                    <span class="cont">SK인천수출단지 (서울시 성동구 여의도동 23-1 234)</span>
+                    <span class="title">인수자</span>
+                    <span class="cont">홍길동 (010-0000-0000)</span>
+                    <span class="title">탁송요청일</span>
+                    <span class="cont">2023.07.23</span>
+                  </div>
+                </div>
+                <!-- //status-view -->
+                <!-- btn-wrap -->
+                <div class="btn-wrap">
+                  <button class="btn-primary" disabled>도착완료</button>
+                </div>
+                <!-- //btn-wrap -->
+              </div>
+              <!-- //status-box -->
+
+              <!-- forms-wrap -->
+              <div class="forms-wrap">
+                <ul class="forms-box">
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>탁송방식</span>
+                          <!-- <span class="req">필수입력값</span> -->
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content flex select-group w104">
+                            <div class="select-wrap">
+                              <span class="select-box w200">
+                                <select name="privacy" id="policyinfoList" class="option01">
+                                  <option value="" selected="">선택</option>
+                                  <option value="001">001</option>
+                                  <option value="002">002</option>
+                                  <option value="003">003</option>
+                                </select>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>출발시간</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content flex date-group">
+                            <div class="calendar-wrap">
+                              <input class="cal" type="date" id="date" data-placeholder="" required aria-required="true"
+                                value={startDateValue} className={styles.selectDay}
+                                onChange={StartDateValueHandler}></input>
+                            </div>
+                            <div class="select-wrap date">
+                              <span class="select-box w65">
+                                <select name="select01" id="select" class="option01">
+                                  <option value="00" selected="">00</option>
+                                  <option value="01">01</option>
+                                  <option value="02">02</option>
+                                  <option value="03">03</option>
+                                </select>
+                              </span>
+                              <span class="date-bar">:</span>
+                              <span class="select-box w65">
+                                <select name="select01" id="select" class="option01">
+                                  <option value="00" selected="">00</option>
+                                  <option value="01">01</option>
+                                  <option value="02">02</option>
+                                  <option value="03">03</option>
+                                </select>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>도착예정</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content flex date-group">
+                            <div class="calendar-wrap">
+                              <input class="cal" type="date" id="date" data-placeholder="" required aria-required="true"
+                                value={startDateValue} className={styles.selectDay}
+                                onChange={StartDateValueHandler}></input>
+                            </div>
+                            <div class="select-wrap date">
+                              <span class="select-box w65">
+                                <select name="select01" id="select" class="option01">
+                                  <option value="00" selected="">00</option>
+                                  <option value="01">01</option>
+                                  <option value="02">02</option>
+                                  <option value="03">03</option>
+                                </select>
+                              </span>
+                              <span class="date-bar">:</span>
+                              <span class="select-box w65">
+                                <select name="select01" id="select" class="option01">
+                                  <option value="00" selected="">00</option>
+                                  <option value="01">01</option>
+                                  <option value="02">02</option>
+                                  <option value="03">03</option>
+                                </select>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="forms-box">
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>탁송기사</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content flex name-group">
+                            <div class="form-control-input">
+                              <input type="search" placeholder="이름" class="w50" />
+                              <button class="btnClear"></button>
+                            </div>
+                            <div class="form-control-input">
+                              <input type="search" placeholder="연락처" class="w122" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>주유비</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input number">
+                              <input class="w294 stress" type="search" value="30,000" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>탁송비</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input number">
+                              <input class="w294 stress" type="search" value="30,000" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>비고</span>
+                        </div>
+                        <div class="form-control-container flex-start">
+                          <div class="form-control-content">
+                            <div class="form-control-input">
+                              <input type="search" placeholder="" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- //forms-wrap -->
+            </div>
+            <!-- //status-wrap -->
+
+            <!-- status-wrap -->
+            <div class="status-wrap">
+              <!-- status-box -->
+              <div class="status-box">
+                <!-- checkbox-wrap -->
+                <div class="checkbox-wrap">
+                  <div class="check-radio">
+                    <input type="checkbox" id="checkbox3">
+                    <label for="checkbox3"></label>
+                  </div>
+                </div>
+                <!-- //checkbox-wrap -->
+                <!-- status-view -->
+                <div class="status-view">
+                  <div class="badge-wrap">
+                    <span class="badge type04">도착</span>
+                    <span class="car-num">134허2366</span>
+                    <span class="car-num-old">(구: 123허2455)</span>
+                    <span class="car-name">쏘나타</span>
+                  </div>
+                  <div class="data-wrap">
+                    <span class="title">출발지</span>
+                    <span class="cont">안성통합매매센터</span>
+                    <span class="title">목적지</span>
+                    <span class="cont">SK인천수출단지 (서울시 성동구 여의도동 23-1 234)</span>
+                    <span class="title">인수자</span>
+                    <span class="cont">홍길동 (010-0000-0000)</span>
+                    <span class="title">탁송요청일</span>
+                    <span class="cont">2023.07.23</span>
+                  </div>
+                </div>
+                <!-- //status-view -->
+                <!-- btn-wrap -->
+                <div class="btn-wrap">
+                  <button class="btn-primary" disabled>도착</button>
+                </div>
+                <!-- //btn-wrap -->
+              </div>
+              <!-- //status-box -->
+
+              <!-- forms-wrap -->
+              <div class="forms-wrap">
+                <ul class="forms-box">
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>탁송방식</span>
+                          <!-- <span class="req">필수입력값</span> -->
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content flex select-group w104">
+                            <div class="select-wrap">
+                              <span class="select-box w200">
+                                <select name="privacy" id="policyinfoList" class="option01">
+                                  <option value="" selected="">선택</option>
+                                  <option value="001">001</option>
+                                  <option value="002">002</option>
+                                  <option value="003">003</option>
+                                </select>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>출발시간</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content flex date-group">
+                            <div class="calendar-wrap">
+                              <input class="cal" type="date" id="date" data-placeholder="" required aria-required="true"
+                                value={startDateValue} className={styles.selectDay}
+                                onChange={StartDateValueHandler}></input>
+                            </div>
+                            <div class="select-wrap date">
+                              <span class="select-box w65">
+                                <select name="select01" id="select" class="option01">
+                                  <option value="00" selected="">00</option>
+                                  <option value="01">01</option>
+                                  <option value="02">02</option>
+                                  <option value="03">03</option>
+                                </select>
+                              </span>
+                              <span class="date-bar">:</span>
+                              <span class="select-box w65">
+                                <select name="select01" id="select" class="option01">
+                                  <option value="00" selected="">00</option>
+                                  <option value="01">01</option>
+                                  <option value="02">02</option>
+                                  <option value="03">03</option>
+                                </select>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>도착예정</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content flex date-group">
+                            <div class="calendar-wrap">
+                              <input class="cal" type="date" id="date" data-placeholder="" required aria-required="true"
+                                value={startDateValue} className={styles.selectDay}
+                                onChange={StartDateValueHandler}></input>
+                            </div>
+                            <div class="select-wrap date">
+                              <span class="select-box w65">
+                                <select name="select01" id="select" class="option01">
+                                  <option value="00" selected="">00</option>
+                                  <option value="01">01</option>
+                                  <option value="02">02</option>
+                                  <option value="03">03</option>
+                                </select>
+                              </span>
+                              <span class="date-bar">:</span>
+                              <span class="select-box w65">
+                                <select name="select01" id="select" class="option01">
+                                  <option value="00" selected="">00</option>
+                                  <option value="01">01</option>
+                                  <option value="02">02</option>
+                                  <option value="03">03</option>
+                                </select>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="forms-box">
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>탁송기사</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content flex name-group">
+                            <div class="form-control-input">
+                              <input type="search" placeholder="이름" class="w50" />
+                              <button class="btnClear"></button>
+                            </div>
+                            <div class="form-control-input">
+                              <input type="search" placeholder="연락처" class="w122" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>주유비</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input number">
+                              <input class="w294 stress" type="search" value="30,000" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>탁송비</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input number">
+                              <input class="w294 stress" type="search" value="30,000" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>비고</span>
+                        </div>
+                        <div class="form-control-container flex-start">
+                          <div class="form-control-content">
+                            <div class="form-control-input">
+                              <input type="search" placeholder="" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- //forms-wrap -->
+            </div>
+            <!-- //status-wrap -->
+
+            <!-- status-wrap -->
+            <div class="status-wrap">
+              <!-- status-box -->
+              <div class="status-box">
+                <!-- checkbox-wrap -->
+                <div class="checkbox-wrap">
+                  <div class="check-radio">
+                    <input type="checkbox" id="checkbox4">
+                    <label for="checkbox4"></label>
+                  </div>
+                </div>
+                <!-- //checkbox-wrap -->
+                <!-- status-view -->
+                <div class="status-view">
+                  <div class="badge-wrap">
+                    <span class="badge type02">배정</span>
+                    <span class="car-num">134허2366</span>
+                    <span class="car-num-old">(구: 123허2455)</span>
+                    <span class="car-name">쏘나타</span>
+                  </div>
+                  <div class="data-wrap">
+                    <span class="title">출발지</span>
+                    <span class="cont">안성통합매매센터</span>
+                    <span class="title">목적지</span>
+                    <span class="cont">SK인천수출단지 (서울시 성동구 여의도동 23-1 234)</span>
+                    <span class="title">인수자</span>
+                    <span class="cont">홍길동 (010-0000-0000)</span>
+                    <span class="title">탁송요청일</span>
+                    <span class="cont">2023.07.23</span>
+                  </div>
+                </div>
+                <!-- //status-view -->
+                <!-- btn-wrap -->
+                <div class="btn-wrap">
+                  <button class="btn-primary">출발</button>
+                </div>
+                <!-- //btn-wrap -->
+              </div>
+              <!-- //status-box -->
+
+              <!-- forms-wrap -->
+              <div class="forms-wrap">
+                <ul class="forms-box">
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>탁송방식</span>
+                          <!-- <span class="req">필수입력값</span> -->
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content flex select-group w104">
+                            <div class="select-wrap">
+                              <span class="select-box w200">
+                                <select name="privacy" id="policyinfoList" class="option01">
+                                  <option value="" selected="">선택</option>
+                                  <option value="001">001</option>
+                                  <option value="002">002</option>
+                                  <option value="003">003</option>
+                                </select>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>출발시간</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content flex date-group">
+                            <div class="calendar-wrap">
+                              <input class="cal" type="date" id="date" data-placeholder="" required aria-required="true"
+                                value={startDateValue} className={styles.selectDay}
+                                onChange={StartDateValueHandler}></input>
+                            </div>
+                            <div class="select-wrap date">
+                              <span class="select-box w65">
+                                <select name="select01" id="select" class="option01">
+                                  <option value="00" selected="">00</option>
+                                  <option value="01">01</option>
+                                  <option value="02">02</option>
+                                  <option value="03">03</option>
+                                </select>
+                              </span>
+                              <span class="date-bar">:</span>
+                              <span class="select-box w65">
+                                <select name="select01" id="select" class="option01">
+                                  <option value="00" selected="">00</option>
+                                  <option value="01">01</option>
+                                  <option value="02">02</option>
+                                  <option value="03">03</option>
+                                </select>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>도착예정</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content flex date-group">
+                            <div class="calendar-wrap">
+                              <input class="cal" type="date" id="date" data-placeholder="" required aria-required="true"
+                                value={startDateValue} className={styles.selectDay}
+                                onChange={StartDateValueHandler}></input>
+                            </div>
+                            <div class="select-wrap date">
+                              <span class="select-box w65">
+                                <select name="select01" id="select" class="option01">
+                                  <option value="00" selected="">00</option>
+                                  <option value="01">01</option>
+                                  <option value="02">02</option>
+                                  <option value="03">03</option>
+                                </select>
+                              </span>
+                              <span class="date-bar">:</span>
+                              <span class="select-box w65">
+                                <select name="select01" id="select" class="option01">
+                                  <option value="00" selected="">00</option>
+                                  <option value="01">01</option>
+                                  <option value="02">02</option>
+                                  <option value="03">03</option>
+                                </select>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="forms-box">
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>탁송기사</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content flex name-group">
+                            <div class="form-control-input">
+                              <input type="search" placeholder="이름" class="w50" />
+                              <button class="btnClear"></button>
+                            </div>
+                            <div class="form-control-input">
+                              <input type="search" placeholder="연락처" class="w122" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>주유비</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input number">
+                              <input class="w294 stress" type="search" value="30,000" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>탁송비</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input number">
+                              <input class="w294 stress" type="search" value="30,000" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>비고</span>
+                        </div>
+                        <div class="form-control-container flex-start">
+                          <div class="form-control-content">
+                            <div class="form-control-input">
+                              <input type="search" placeholder="" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- //forms-wrap -->
+            </div>
+            <!-- //status-wrap -->
+
+            <!-- paging-wrap -->
+            <div role="navigation" class="paging-wrap">
+              <a href="" class="first"><span class="hide-txt">첫페이지</span></a>
+              <a href="" class="prev"><span class="hide-txt">이전페이지</span></a>
+              <ol>
+                <li class="page-btn"><a href="page=1" class="this">1</a></li>
+                <li class="page-btn"><a href="page=2">2</a></li>
+                <li class="page-btn"><a href="page=3">3</a></li>
+                <li class="page-btn"><a href="page=4">4</a></li>
+                <li class="page-btn"><a href="page=4">5</a></li>
+              </ol>
+              <a href="" class="next"><span class="hide-txt">다음페이지</span></a>
+              <a href="" class="last"><span class="hide-txt">마지막페이지</span></a>
+            </div>
+            <!-- //paging-wrap -->
+
+          </div>
+        </section>
+
+      </article>
+
+      <!-- quick -->
+      <!-- <article class="quick" w3-include-html="./include/quick.html"></article> -->
+      <!-- //quick -->
+    </main>
+
+    <!-- footer -->
+    <footer w3-include-html="./include/footer.html"></footer>
+    <!-- //footer -->
+  </div>
+</body>
+
+<!-- 탁송 팝업 -->
+<div class="popup-wrap consignment person2" style="display: block">
+  <div class="pop-box w850">
+    <div class="pop-header">
+      <div class="box-header">
+        <h2>일괄 TP배정</h2>
+        <!-- <h6>팝업 설명</h6> -->
+      </div>
+      <button class="pop-close" onclick="popClose();"><span class="hide-txt">팝업닫기</span></button>
+    </div>
+
+    <div class="pop-content">
+
+      <h3>배정할 차량정보 <span class="desc">( 총 5대 )</span></h3>
+
+      <div class="car info-wrap">
+        <ul class="car info-block">
+          <li>134허2366<span class="desc">(구: 123허2455)</span></li>
+          <li>134허2366<span class="desc">(구: 123허2455)</span></li>
+          <li>134허2366<span class="desc">(구: 123허2455)</span></li>
+          <li>134허2366<span class="desc">(구: 123허2455)</span></li>
+          <li>134허2366<span class="desc">(구: 123허2455)</span></li>
+        </ul>
+      </div>
+
+      <h3>TP 배정정보</h3>
+
+      <div class="car input-wrap">
+        <ul class="car input-block">
+          <li>
+            <div class="form">
+              <div class="form-control">
+                <div class="form-control-label">
+                  <span>탁송기사</span>
+                </div>
+                <div class="form-control-container">
+                  <div class="form-control-content flex name-group">
+                    <div class="form-control-input">
+                      <input type="search" placeholder="이름" class="w110" />
+                      <button class="btnClear"></button>
+                    </div>
+                    <div class="form-control-input">
+                      <input type="search" placeholder="연락처" class="w186" />
+                      <button class="btnClear"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="form">
+              <div class="form-control">
+                <div class="form-control-label">
+                  <span>탁송비</span>
+                </div>
+                <div class="form-control-container">
+                  <div class="form-control-content">
+                    <div class="form-control-input number">
+                      <input class="w304 stress" type="search" value="30,000" />
+                      <button class="btnClear"></button>
+                    </div>
+                  </div>
+                </div>
+                <span class="unit">원</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="form">
+              <div class="form-control">
+                <div class="form-control-label">
+                  <span>출발시간</span>
+                </div>
+                <div class="form-control-container">
+                  <div class="form-control-content flex date-group">
+                    <div class="calendar-wrap">
+                      <input class="cal w146" type="date" id="date" data-placeholder="" required aria-required="true"
+                        value={startDateValue} className={styles.selectDay} onChange={StartDateValueHandler}></input>
+                    </div>
+                    <div class="select-wrap date">
+                      <span class="select-box w65">
+                        <select name="select01" id="select" class="option01">
+                          <option value="00" selected="">00</option>
+                          <option value="01">01</option>
+                          <option value="02">02</option>
+                          <option value="03">03</option>
+                        </select>
+                      </span>
+                      <span class="date-bar">:</span>
+                      <span class="select-box w65">
+                        <select name="select01" id="select" class="option01">
+                          <option value="00" selected="">00</option>
+                          <option value="01">01</option>
+                          <option value="02">02</option>
+                          <option value="03">03</option>
+                        </select>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="form">
+              <div class="form-control">
+                <div class="form-control-label">
+                  <span>도착예정</span>
+                </div>
+                <div class="form-control-container">
+                  <div class="form-control-content flex date-group">
+                    <div class="calendar-wrap">
+                      <input class="cal w146" type="date" id="date" data-placeholder="" required aria-required="true"
+                        value={startDateValue} className={styles.selectDay} onChange={StartDateValueHandler}></input>
+                    </div>
+                    <div class="select-wrap date">
+                      <span class="select-box w65">
+                        <select name="select01" id="select" class="option01">
+                          <option value="00" selected="">00</option>
+                          <option value="01">01</option>
+                          <option value="02">02</option>
+                          <option value="03">03</option>
+                        </select>
+                      </span>
+                      <span class="date-bar">:</span>
+                      <span class="select-box w65">
+                        <select name="select01" id="select" class="option01">
+                          <option value="00" selected="">00</option>
+                          <option value="01">01</option>
+                          <option value="02">02</option>
+                          <option value="03">03</option>
+                        </select>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="form">
+              <div class="form-control">
+                <div class="form-control-label">
+                  <span>비고</span>
+                </div>
+                <div class="form-control-container">
+                  <div class="form-control-content">
+                    <div class="form-control-input">
+                      <input type="search" placeholder="" />
+                      <button class="btnClear"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="btn-box"><button class="btn-gray">취소</button><button class="btn-primary">배정등록</button></div>
+    </div>
+  </div>
+</div>
+<!-- //탁송 팝업 -->
+
+<!-- <script src="../../js/ui.js"></script> -->
+<script src="../../../assets/pc/js/ui.js"></script>
+
+<script>
+  includeHTML();
+</script>
+
+</html>

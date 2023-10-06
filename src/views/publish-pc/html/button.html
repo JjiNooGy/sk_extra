@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+
+    <title>게시판 샘플</title>
+    <!-- <link rel="stylesheet" type="text/css" href="/src/assets/fonts.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../../../assets/pc/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="list.css" />
+
+    <script src="include.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+
+    <script>
+      hljs.highlightAll();
+    </script>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- headerWrap -->
+      <div class="header_wrap" w3-include-html="./include/header.html"></div>
+      <!-- headerWrap -->
+
+      <main>
+        <article>
+          <section>
+            <div class="page-title">
+              <h2 class="title">버튼</h2>
+              <p class="title-desc">SK 렌터카의 새로운 소식과 정보들을 한곳에서 확인할 수 있어요.</p>
+            </div>
+          </section>
+
+          <section>
+            <h3 class="clause">버튼사용</h3>
+            <!-- 기본버튼 구조 -->
+            <div class="btn-wrap">
+              <div class="btn-box">
+                <button class="btn-primary">primary</button>
+              </div>
+              <div class="btn-box">
+                <button class="btn-gray">gray</button>
+              </div>
+              <div class="btn-box">
+                <button class="btn-line">line</button>
+              </div>
+
+              <div class="btn-box">
+                <button class="btn-primary" disabled>primary :disabled</button>
+              </div>
+              <div class="btn-box">
+                <button class="btn-gray" disabled>gray :disabled</button>
+              </div>
+              <div class="btn-box">
+                <button class="btn-line" disabled>line :disabled</button>
+              </div>
+
+              <div class="btn-box">
+                <button class="btn-primary disabled">primary .disabled</button>
+              </div>
+              <div class="btn-box">
+                <button class="btn-gray disabled">gray .disabled</button>
+              </div>
+              <div class="btn-box">
+                <button class="btn-line disabled">line .disabled</button>
+              </div>
+            </div>
+            <!-- //기본버튼 구조 -->
+
+            <pre class="theme-codepen-embed">
+              <code class="language-html">&#x3C;div class=&#x22;btn-wrap&#x22;&#x3E;
+  &#x3C;div class=&#x22;btn-box&#x22;&#x3E;
+    &#x3C;button class=&#x22;btn-primary&#x22;&#x3E;primary&#x3C;/button&#x3E;
+  &#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;btn-box&#x22;&#x3E;
+    &#x3C;button class=&#x22;btn-gray&#x22;&#x3E;gray&#x3C;/button&#x3E;
+  &#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;btn-box&#x22;&#x3E;
+    &#x3C;button class=&#x22;btn-line&#x22;&#x3E;line&#x3C;/button&#x3E;
+  &#x3C;/div&#x3E;
+
+  &#x3C;div class=&#x22;btn-box&#x22;&#x3E;
+    &#x3C;button class=&#x22;btn-primary&#x22; disabled&#x3E;primary :disabled&#x3C;/button&#x3E;
+  &#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;btn-box&#x22;&#x3E;
+    &#x3C;button class=&#x22;btn-gray&#x22; disabled&#x3E;gray :disabled&#x3C;/button&#x3E;
+  &#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;btn-box&#x22;&#x3E;
+    &#x3C;button class=&#x22;btn-line&#x22; disabled&#x3E;line :disabled&#x3C;/button&#x3E;
+  &#x3C;/div&#x3E;
+
+  &#x3C;div class=&#x22;btn-box&#x22;&#x3E;
+    &#x3C;button class=&#x22;btn-primary disabled&#x22;&#x3E;primary .disabled&#x3C;/button&#x3E;
+  &#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;btn-box&#x22;&#x3E;
+    &#x3C;button class=&#x22;btn-gray disabled&#x22;&#x3E;gray .disabled&#x3C;/button&#x3E;
+  &#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;btn-box&#x22;&#x3E;
+    &#x3C;button class=&#x22;btn-line disabled&#x22;&#x3E;line .disabled&#x3C;/button&#x3E;
+  &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code>
+            </pre>
+          </section>
+
+          <section>
+            <h3 class="clause">a 태그 사용</h3>
+            <!-- 기본버튼 구조 -->
+            <div class="btn-wrap">
+              <div class="btn-box">
+                <a class="btn-gray">gray</a>
+              </div>
+              <div class="btn-box">
+                <a class="btn-primary">primary</a>
+              </div>
+              <div class="btn-box">
+                <a class="btn-line">line</a>
+              </div>
+
+              <div class="btn-box">
+                <a class="btn-gray disabled">gray .disabled</a>
+              </div>
+              <div class="btn-box">
+                <a class="btn-primary disabled">primary .disabled</a>
+              </div>
+              <div class="btn-box">
+                <a class="btn-line disabled">line .disabled</a>
+              </div>
+            </div>
+            <!-- //기본버튼 구조 -->
+
+            <pre class="theme-codepen-embed">
+              <code class="language-html">&#x3C;div class=&#x22;btn-wrap&#x22;&#x3E;
+  &#x3C;div class=&#x22;btn-box&#x22;&#x3E;
+    &#x3C;a class=&#x22;btn-gray&#x22;&#x3E;gray&#x3C;/a&#x3E;
+  &#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;btn-box&#x22;&#x3E;
+    &#x3C;a class=&#x22;btn-primary&#x22;&#x3E;primary&#x3C;/a&#x3E;
+  &#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;btn-box&#x22;&#x3E;
+    &#x3C;a class=&#x22;btn-line&#x22;&#x3E;line&#x3C;/a&#x3E;
+  &#x3C;/div&#x3E;
+
+  &#x3C;div class=&#x22;btn-box&#x22;&#x3E;
+    &#x3C;a class=&#x22;btn-gray disabled&#x22;&#x3E;gray .disabled&#x3C;/a&#x3E;
+  &#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;btn-box&#x22;&#x3E;
+    &#x3C;a class=&#x22;btn-primary disabled&#x22;&#x3E;primary .disabled&#x3C;/a&#x3E;
+  &#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;btn-box&#x22;&#x3E;
+    &#x3C;a class=&#x22;btn-line disabled&#x22;&#x3E;line .disabled&#x3C;/a&#x3E;
+  &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code>
+            </pre>
+          </section>
+
+          <section>
+            <h3 class="clause">조합</h3>
+            <!-- full -->
+            <div class="btn-wrap">
+              <div class="btn-box">
+                <button class="btn-primary">primary</button>
+              </div>
+            </div>
+            <!-- //full -->
+
+            <!-- half -->
+            <div class="btn-wrap">
+              <div class="btn-box">
+                <button class="btn-gray">gray</button>
+                <button class="btn-line">line</button>
+              </div>
+            </div>
+            <!-- //half -->
+
+            <!-- 2:1 -->
+            <div class="btn-wrap col2">
+              <div class="btn-box">
+                <button class="btn-primary">primary</button>
+                <button class="btn-gray">gray</button>
+              </div>
+            </div>
+            <!-- //2:1 -->
+
+            <!-- 1:2 -->
+            <div class="btn-wrap col1">
+              <div class="btn-box">
+                <button class="btn-primary">primary</button>
+                <button class="btn-gray">gray</button>
+              </div>
+            </div>
+            <!-- //1:2 -->
+
+            <!-- fixed -->
+            <div class="btn-wrap fixed">
+              <div class="btn-box">
+                <button class="btn-primary">primary</button>
+                <button class="btn-gray wp20">gray</button>
+              </div>
+            </div>
+            <!-- //fixed -->
+
+            <pre class="theme-codepen-embed">
+              <code class="language-html">&#x3C;!-- full --&#x3E;
+&#x3C;div class=&#x22;btn-wrap&#x22;&#x3E;
+  &#x3C;div class=&#x22;btn-box&#x22;&#x3E;
+    &#x3C;button class=&#x22;btn-primary&#x22;&#x3E;primary&#x3C;/button&#x3E;
+  &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- //full --&#x3E;
+
+&#x3C;!-- half --&#x3E;
+&#x3C;div class=&#x22;btn-wrap&#x22;&#x3E;
+  &#x3C;div class=&#x22;btn-box&#x22;&#x3E;
+    &#x3C;button class=&#x22;btn-gray&#x22;&#x3E;gray&#x3C;/button&#x3E;
+    &#x3C;button class=&#x22;btn-line&#x22;&#x3E;line&#x3C;/button&#x3E;
+  &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- //half --&#x3E;
+
+&#x3C;!-- 2:1 --&#x3E;
+&#x3C;div class=&#x22;btn-wrap col2&#x22;&#x3E;
+  &#x3C;div class=&#x22;btn-box&#x22;&#x3E;
+    &#x3C;button class=&#x22;btn-primary&#x22;&#x3E;primary&#x3C;/button&#x3E;
+    &#x3C;button class=&#x22;btn-gray&#x22;&#x3E;gray&#x3C;/button&#x3E;
+  &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- //2:1 --&#x3E;
+
+&#x3C;!-- 1:2 --&#x3E;
+&#x3C;div class=&#x22;btn-wrap col1&#x22;&#x3E;
+  &#x3C;div class=&#x22;btn-box&#x22;&#x3E;
+    &#x3C;button class=&#x22;btn-primary&#x22;&#x3E;primary&#x3C;/button&#x3E;
+    &#x3C;button class=&#x22;btn-gray&#x22;&#x3E;gray&#x3C;/button&#x3E;
+  &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- //1:2 --&#x3E;
+
+&#x3C;!-- fixed --&#x3E;
+&#x3C;div class=&#x22;btn-wrap fixed&#x22;&#x3E;
+  &#x3C;div class=&#x22;btn-box&#x22;&#x3E;
+    &#x3C;button class=&#x22;btn-primary&#x22;&#x3E;primary&#x3C;/button&#x3E;
+    &#x3C;button class=&#x22;btn-gray wp20&#x22;&#x3E;gray&#x3C;/button&#x3E;
+  &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- //fixed --&#x3E;</code>
+            </pre>
+          </section>
+        </article>
+
+        <!-- quick -->
+        <article class="quick" w3-include-html="./include/quick.html"></article>
+        <!-- //quick -->
+      </main>
+
+      <!-- footer -->
+      <footer w3-include-html="./include/footer.html"></footer>
+      <!-- //footer -->
+    </div>
+  </body>
+  <script src="../../../assets/pc/js/ui.js"></script>
+
+  <script>
+    includeHTML();
+  </script>
+</html>

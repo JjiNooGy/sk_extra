@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+
+  <title>게시판 샘플</title>
+  <link rel="stylesheet" type="text/css" href="../../../assets/pc/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="list.css" />
+
+  <script src="include.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+  <style>
+    .btn-open-pop {
+      background: linear-gradient(70deg, #ff7d00 -1%, #f35b5b 37%, #fe532d 116.61%);
+      color: #fff;
+      padding: 8px 24px;
+      border-radius: 8px;
+      font-weight: 500;
+      font-size: 18px;
+    }
+  </style>
+  <script>
+    hljs.highlightAll();
+  </script>
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- headerWrap -->
+    <div class="header_wrap" w3-include-html="./include/header.html"></div>
+    <!-- headerWrap -->
+
+    <main>
+      <article>
+        <section>
+          <div class="page-title">
+            <h2 class="title">레이어 팝업</h2>
+            <p class="title-desc">팝업은 body태그 다음에 기술 합니다.</p>
+          </div>
+        </section>
+
+        <section>
+          <p class="clause">layer popup</p>
+
+          <button data-rel="#pop-01" class="open-pop btn-open-pop">레이어 팝업 버튼</button>
+
+          <pre class="theme-codepen-embed">
+              <code class="language-html">&#x3C;button data-rel=&#x22;#pop-01&#x22; class=&#x22;open-pop btn-open-pop&#x22;&#x3E;&#xB808;&#xC774;&#xC5B4; &#xD31D;&#xC5C5; &#xBC84;&#xD2BC;&#x3C;/button&#x3E;
+                
+                
+&#x3C;!-- &#xB808;&#xC774;&#xC5B4;&#xD31D;&#xC5C5; --&#x3E;
+&#x3C;div class=&#x22;popup-wrap load-pop&#x22; id=&#x22;pop-01&#x22;&#x3E;
+  &#x3C;div class=&#x22;pop-box&#x22;&#x3E;
+    &#x3C;div class=&#x22;pop-header&#x22;&#x3E;
+      &#x3C;h2&#x3E;&#x3C;span class=&#x22;hide-txt&#x22;&#x3E;&#xBE44;&#xBC00;&#xBC88;&#xD638; &#xC7AC;&#xC124;&#xC815;&#x3C;/span&#x3E;&#x3C;/h2&#x3E;
+      &#x3C;button class=&#x22;pop-close btn-close&#x22;&#x3E;&#x3C;span class=&#x22;hide-txt&#x22;&#x3E;&#xD31D;&#xC5C5;&#xB2EB;&#xAE30;&#x3C;/span&#x3E;&#x3C;/button&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;pop-content&#x22;&#x3E;&#xD31D;&#xC5C5;&#x3C;br /&#x3E;&#xCEE8;&#xD150;&#xCE20;&#x3C;br /&#x3E;&#xC601;&#xC5ED;&#x3C;/div&#x3E;
+  &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- //&#xB808;&#xC774;&#xC5B4;&#xD31D;&#xC5C5; --&#x3E;</code>
+            </pre>
+        </section>
+      </article>
+
+      <!-- quick -->
+      <article class="quick" w3-include-html="./include/quick.html"></article>
+      <!-- //quick -->
+    </main>
+
+    <!-- footer -->
+    <footer w3-include-html="./include/footer.html"></footer>
+    <!-- //footer -->
+  </div>
+</body>
+
+<!-- 레이어팝업 -->
+<div class="popup-wrap load-pop" id="pop-01">
+  <div class="pop-box">
+    <div class="pop-header">
+      <h2><span class="hide-txt">비밀번호 재설정</span></h2>
+      <button class="pop-close btn-close"><span class="hide-txt">팝업닫기</span></button>
+    </div>
+    <div class="pop-content">팝업<br />컨텐츠<br />영역</div>
+  </div>
+</div>
+<!-- //레이어팝업 -->
+
+<script src="../../../assets/pc/js/ui.js"></script>
+
+<script>
+  includeHTML();
+</script>
+
+</html>

@@ -1,0 +1,45 @@
+.bd-example + p {
+  margin-top: 2rem;
+}
+.bd-example > .form-control + .form-control {
+  margin-top: 0.5rem;
+}
+.bd-example > .nav + .nav,
+.bd-example > .alert + .alert,
+.bd-example > .navbar + .navbar,
+.bd-example > .progress + .progress {
+  margin-top: 1rem;
+}
+.bd-example > .dropdown-menu {
+  position: static;
+  display: block;
+}
+.bd-example > :last-child {
+  margin-bottom: 0;
+}
+.bd-example > svg + svg,
+.bd-example > img + img {
+  margin-left: 0.5rem;
+}
+.bd-example > .btn,
+.bd-example > .btn-group {
+  margin: 0.25rem 0.125rem;
+}
+.bd-example > .btn-toolbar + .btn-toolbar {
+  margin-top: 0.5rem;
+}
+.bd-example > .list-group {
+  max-width: 400px;
+}
+.bd-example > [class*="list-group-horizontal"] {
+  max-width: 100%;
+}
+.bd-example .fixed-top,
+.bd-example .sticky-top {
+  position: static;
+  margin: -1rem -1rem 1rem;
+}
+.bd-example .fixed-bottom {
+  position: static;
+  margin: 1rem -1rem -1rem;
+}

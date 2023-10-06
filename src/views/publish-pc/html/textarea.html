@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+
+  <title>게시판 샘플</title>
+  <link rel="stylesheet" type="text/css" href="../../../assets/pc/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="list.css" />
+
+  <script src="include.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+
+  <script>
+    hljs.highlightAll();
+  </script>
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- headerWrap -->
+    <div class="header_wrap" w3-include-html="./include/header.html"></div>
+    <!-- headerWrap -->
+
+    <main>
+      <article>
+        <section>
+          <div class="page-title">
+            <h2 class="title">텍스트에어리어</h2>
+            <p class="title-desc">SK 렌터카의 새로운 소식과 정보들을 한곳에서 확인할 수 있어요.</p>
+          </div>
+        </section>
+
+        <section>
+          <p class="clause">textarea</p>
+          <div class="wrap-textarea">
+            <div class="box-textarea md">
+              <textarea placeholder="textarea."></textarea>
+            </div>
+            <p class="txt-cnt"><span>0</span>/500</p>
+          </div>
+
+          <pre class="theme-codepen-embed">
+              <code class="language-html">&#x3C;div class=&#x22;wrap-textarea&#x22;&#x3E;
+  &#x3C;div class=&#x22;box-textarea md&#x22;&#x3E;
+    &#x3C;textarea placeholder=&#x22;textarea.&#x22;&#x3E;&#x3C;/textarea&#x3E;
+  &#x3C;/div&#x3E;
+  &#x3C;p class=&#x22;txt-cnt&#x22;&#x3E;&#x3C;span&#x3E;0&#x3C;/span&#x3E;/500&#x3C;/p&#x3E;
+&#x3C;/div&#x3E;</code>
+            </pre>
+        </section>
+      </article>
+
+      <!-- quick -->
+      <article class="quick" w3-include-html="../include/quick.html"></article>
+      <!-- //quick -->
+    </main>
+
+    <!-- footer -->
+    <footer w3-include-html="../include/footer.html"></footer>
+    <!-- //footer -->
+  </div>
+</body>
+<script src="../../js/ui.js"></script>
+
+<script>
+  includeHTML();
+  //아코디언
+  const items = document.querySelectorAll(".accordion button");
+
+  function toggleAccordion() {
+    const itemToggle = this.getAttribute("aria-expanded");
+
+    for (i = 0; i < items.length; i++) {
+      items[i].setAttribute("aria-expanded", "false");
+    }
+
+    if (itemToggle == "false") {
+      this.setAttribute("aria-expanded", "true");
+    }
+  }
+
+  items.forEach((item) => item.addEventListener("click", toggleAccordion));
+</script>
+
+</html>

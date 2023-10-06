@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+
+    <title>게시판 샘플</title>
+    <!-- <link rel="stylesheet" type="text/css" href="/src/assets/fonts.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../../../assets/pc/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="list.css" />
+
+    <script src="include.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+
+    <script>
+      hljs.highlightAll();
+    </script>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- headerWrap -->
+      <div class="header_wrap" w3-include-html="./include/header.html"></div>
+      <!-- headerWrap -->
+
+      <main>
+        <article>
+          <section>
+            <div class="page-title">
+              <h2 class="title">텍스트에어리어</h2>
+              <p class="title-desc">SK 렌터카의 새로운 소식과 정보들을 한곳에서 확인할 수 있어요.</p>
+            </div>
+          </section>
+
+          <section>
+            <p class="clause">카드</p>
+            <div class="product-list">
+              <div class="card-box">
+                <div class="card-bullet">sdf</div>
+                <div class="cards">
+                  <div class="card-thum">
+                    <a href=""><img src="https://via.placeholder.com/333x208" alt="상품이미지" /></a>
+                  </div>
+                  <div class="card-content">
+                    <div class="">
+                      <div class="title"><a href="">제품 이름</a></div>
+                      <div class="resource-box"><span>2020년식</span><span>10,762km</span><span>경유</span></div>
+                      <div class="bdg-box"><span>사고등급 A</span><span>외관등급 B</span></div>
+                    </div>
+                    <div class="price-box">
+                      <div class="price"><span>2,196</span><em class="unit">만원</em></div>
+                      <div class="sale">40% 할인</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-box"><button class="primary">비교하기</button><button class="">상담하기</button></div>
+              </div>
+            </div>
+
+            <pre class="theme-codepen-embed">
+              <code class="language-html">&#x3C;div class=&#x22;card-box&#x22;&#x3E;
+  &#x3C;div class=&#x22;card-bullet&#x22;&#x3E;sdf&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;cards&#x22;&#x3E;
+    &#x3C;div class=&#x22;card-thum&#x22;&#x3E;
+      &#x3C;a href=&#x22;&#x22;&#x3E;&#x3C;img src=&#x22;https://via.placeholder.com/333x208&#x22; alt=&#x22;&#xC0C1;&#xD488;&#xC774;&#xBBF8;&#xC9C0;&#x22; /&#x3E;&#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;card-content&#x22;&#x3E;
+      &#x3C;div class=&#x22;&#x22;&#x3E;
+        &#x3C;div class=&#x22;title&#x22;&#x3E;&#x3C;a href=&#x22;&#x22;&#x3E;&#xC81C;&#xD488; &#xC774;&#xB984;&#x3C;/a&#x3E;&#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;resource-box&#x22;&#x3E;&#x3C;span&#x3E;2020&#xB144;&#xC2DD;&#x3C;/span&#x3E;&#x3C;span&#x3E;10,762km&#x3C;/span&#x3E;&#x3C;span&#x3E;&#xACBD;&#xC720;&#x3C;/span&#x3E;&#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;bdg-box&#x22;&#x3E;&#x3C;span&#x3E;&#xC0AC;&#xACE0;&#xB4F1;&#xAE09; A&#x3C;/span&#x3E;&#x3C;span&#x3E;&#xC678;&#xAD00;&#xB4F1;&#xAE09; B&#x3C;/span&#x3E;&#x3C;/div&#x3E;
+      &#x3C;/div&#x3E;
+      &#x3C;div class=&#x22;price-box&#x22;&#x3E;
+        &#x3C;div class=&#x22;price&#x22;&#x3E;&#x3C;span&#x3E;2,196&#x3C;/span&#x3E;&#x3C;em class=&#x22;unit&#x22;&#x3E;&#xB9CC;&#xC6D0;&#x3C;/em&#x3E;&#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;sale&#x22;&#x3E;40% &#xD560;&#xC778;&#x3C;/div&#x3E;
+      &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+  &#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;btn-box&#x22;&#x3E;&#x3C;button class=&#x22;primary&#x22;&#x3E;&#xBE44;&#xAD50;&#xD558;&#xAE30;&#x3C;/button&#x3E;&#x3C;button class=&#x22;&#x22;&#x3E;&#xC0C1;&#xB2F4;&#xD558;&#xAE30;&#x3C;/button&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code>
+            </pre>
+          </section>
+
+          <section>
+            <p class="clause">카드 - 이미지 하단</p>
+            <div class="card-box r-colm">
+              <div class="card-bullet">sdf</div>
+              <div class="cards">
+                <div class="card-thum">
+                  <a href=""><img src="https://via.placeholder.com/333x208" alt="상품이미지" /></a>
+                </div>
+                <div class="card-content">
+                  <div class="">
+                    <div class="title"><a href="">제품 이름</a></div>
+                    <div class="resource-box"><span>2020년식</span><span>10,762km</span><span>경유</span></div>
+                    <div class="bdg-box"><span>사고등급 A</span><span>외관등급 B</span></div>
+                  </div>
+                  <div class="price-box">
+                    <div class="price"><span>2,196</span><em class="unit">만원</em></div>
+                    <div class="sale">40% 할인</div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-box"><button class="primary">비교하기</button><button class="">상담하기</button></div>
+            </div>
+          </div>
+          </section>
+        </article>
+
+        <!-- quick -->
+        <article class="quick" w3-include-html="./include/quick.html"></article>
+        <!-- //quick -->
+      </main>
+
+      <!-- footer -->
+      <footer w3-include-html="./include/footer.html"></footer>
+      <!-- //footer -->
+    </div>
+  </body>
+  <script src="../../../assets/pc/js/ui.js"></script>
+
+  <script>
+    includeHTML();
+  </script>
+</html>

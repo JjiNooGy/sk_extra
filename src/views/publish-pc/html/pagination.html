@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+
+    <title>아코디언</title>
+    <link rel="stylesheet" type="text/css" href="../../../assets/pc/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="list.css" />
+
+    <script src="include.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+
+    <script>
+      hljs.highlightAll();
+    </script>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- headerWrap -->
+      <div class="header_wrap" w3-include-html="./include/header.html"></div>
+      <!-- headerWrap -->
+
+      <main>
+        <article>
+          <section>
+            <div class="page-title">
+              <h2 class="title">텍스트에어리어</h2>
+              <p class="title-desc">SK 렌터카의 새로운 소식과 정보들을 한곳에서 확인할 수 있어요.</p>
+            </div>
+          </section>
+
+          <section>
+            <p class="clause">textarea</p>
+            <div role="navigation" class="paging-wrap">
+              <a href="" class="first"><span class="hide-txt">첫페이지</span></a>
+              <a href="" class="prev"><span class="hide-txt">이전페이지</span></a>
+              <ol>
+                <li class="page-btn"><a href="page=1">1</a></li>
+                <li class="page-btn"><a href="page=2">2</a></li>
+                <li class="page-btn"><a href="page=3">3</a></li>
+                <li class="page-btn"><a href="page=4">4</a></li>
+                <li class="page-btn"><a href="page=4">5</a></li>
+                <li class="page-btn"><a href="page=4">6</a></li>
+                <li class="page-btn"><a href="page=4">7</a></li>
+                <li class="page-btn"><a href="page=4">8</a></li>
+                <li class="page-btn"><a href="page=4">9</a></li>
+                <li class="page-btn"><a href="page=10" class="this">10</a></li>
+              </ol>
+              <a href="" class="next"><span class="hide-txt">다음페이지</span></a>
+              <a href="" class="last"><span class="hide-txt">마지막페이지</span></a>
+            </div>
+
+            <pre class="theme-codepen-embed">
+              <code class="language-html"> &#x3C;div role=&#x22;navigation&#x22; class=&#x22;paging-wrap&#x22;&#x3E;
+  &#x3C;a href=&#x22;&#x22; class=&#x22;first&#x22;&#x3E;&#x3C;span class=&#x22;hide-txt&#x22;&#x3E;&#xCCAB;&#xD398;&#xC774;&#xC9C0;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+  &#x3C;a href=&#x22;&#x22; class=&#x22;prev&#x22;&#x3E;&#x3C;span class=&#x22;hide-txt&#x22;&#x3E;&#xC774;&#xC804;&#xD398;&#xC774;&#xC9C0;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+  &#x3C;ol&#x3E;
+    &#x3C;li class=&#x22;page-btn&#x22;&#x3E;&#x3C;a href=&#x22;page=1&#x22;&#x3E;1&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li class=&#x22;page-btn&#x22;&#x3E;&#x3C;a href=&#x22;page=2&#x22;&#x3E;2&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li class=&#x22;page-btn&#x22;&#x3E;&#x3C;a href=&#x22;page=3&#x22;&#x3E;3&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li class=&#x22;page-btn&#x22;&#x3E;&#x3C;a href=&#x22;page=4&#x22;&#x3E;4&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li class=&#x22;page-btn&#x22;&#x3E;&#x3C;a href=&#x22;page=5&#x22;&#x3E;5&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li class=&#x22;page-btn&#x22;&#x3E;&#x3C;a href=&#x22;page=6&#x22;&#x3E;6&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li class=&#x22;page-btn&#x22;&#x3E;&#x3C;a href=&#x22;page=7&#x22;&#x3E;7&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li class=&#x22;page-btn&#x22;&#x3E;&#x3C;a href=&#x22;page=8&#x22;&#x3E;8&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li class=&#x22;page-btn&#x22;&#x3E;&#x3C;a href=&#x22;page=9&#x22;&#x3E;9&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li class=&#x22;page-btn&#x22;&#x3E;&#x3C;a href=&#x22;page=10&#x22; class=&#x22;this&#x22;&#x3E;10&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+  &#x3C;/ol&#x3E;
+  &#x3C;a href=&#x22;&#x22; class=&#x22;next&#x22;&#x3E;&#x3C;span class=&#x22;hide-txt&#x22;&#x3E;&#xB2E4;&#xC74C;&#xD398;&#xC774;&#xC9C0;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+  &#x3C;a href=&#x22;&#x22; class=&#x22;last&#x22;&#x3E;&#x3C;span class=&#x22;hide-txt&#x22;&#x3E;&#xB9C8;&#xC9C0;&#xB9C9;&#xD398;&#xC774;&#xC9C0;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+&#x3C;/div&#x3E;</code>
+            </pre>
+          </section>
+        </article>
+
+        <!-- quick -->
+        <article class="quick" w3-include-html="./include/quick.html"></article>
+        <!-- //quick -->
+      </main>
+
+      <!-- footer -->
+      <footer w3-include-html="./include/footer.html"></footer>
+      <!-- //footer -->
+    </div>
+  </body>
+  <script src="../../../assets/pc/js/ui.js"></script>
+
+  <script>
+    includeHTML();
+    //아코디언
+    const items = document.querySelectorAll(".accordion button");
+
+    function toggleAccordion() {
+      const itemToggle = this.getAttribute("aria-expanded");
+
+      for (i = 0; i < items.length; i++) {
+        items[i].setAttribute("aria-expanded", "false");
+      }
+
+      if (itemToggle == "false") {
+        this.setAttribute("aria-expanded", "true");
+      }
+    }
+
+    items.forEach((item) => item.addEventListener("click", toggleAccordion));
+  </script>
+</html>

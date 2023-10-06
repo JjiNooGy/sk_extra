@@ -1,0 +1,21 @@
+/**************************************************************************************************
+*** input
+**************************************************************************************************/
+
+.frmInpt {
+  border-radius: var(--border-radius-form);
+}
+
+.box-input {
+  border: 2px solid #ff5d01;
+  padding: 21px 30px;
+  border-radius: 118px;
+
+  input,
+  select {
+    width: 100%;
+    border: none;
+    color: var(--form-text);
+    outline: 1px solid #fefefe;
+  }
+}
