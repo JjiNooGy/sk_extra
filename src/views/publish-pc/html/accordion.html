@@ -1,74 +1,76 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
 
-    <title>게시판 샘플</title>
-    <!-- <link rel="stylesheet" type="text/css" href="/src/assets/fonts.css" /> -->
-    <link rel="stylesheet" type="text/css" href="../../../assets/pc/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="list.css" />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, inital-scale=1.0" />
 
-    <script src="include.js"></script>
+  <title>샘플 - 아코디언</title>
+  <link href="../../../assets/pc/img/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" type="text/css" href="../../../assets/pc/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="list.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+  <script src="include.js"></script>
 
-    <!-- and it's easy to individually load additional languages -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 
-    <script>
-      hljs.highlightAll();
-    </script>
-  </head>
-  <body>
-    <div class="wrap">
-      <!-- headerWrap -->
-      <div class="header_wrap" w3-include-html="./include/header.html"></div>
-      <!-- headerWrap -->
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
 
-      <main>
-        <article>
-          <section>
-            <div class="page-title">
-              <h2 class="title">아코디언</h2>
-              <p class="title-desc">SK 렌터카의 새로운 소식과 정보들을 한곳에서 확인할 수 있어요.</p>
-            </div>
-          </section>
-          <section>
-            <div class="faq-wrap">
-              <ul>
-                <!-- qna 1set-->
-                <li>
-                  <div class="faq-box">
-                    <div class="q-box">
-                      <p><span class="category">[다이렉트]</span><span class="subject">본인확인은 왜 해야하나요? - 개별움직임</span></p>
-                    </div>
-                    <div class="a-box">
-                      <p>SK렌터카 다이렉트는 본인확인과 신용심사를 통해 고객님에게 맞는 정확한 견적과 렌탈료를 제공합니다.</p>
-                      <p>타사와 달리 첫 화면에 렌탈료가 노출되지 않는 건 고객님께 정확한 렌탈료를 빠르게 제공하기 위한 목적입니다.</p>
-                      <p>또한 금융사와 달리 신용조회를 반복하여도 신용등급에는 영향을 미치지 않으니 걱정하지 마세요.</p>
-                    </div>
+  <script>
+    hljs.highlightAll();
+  </script>
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- headerWrap -->
+    <div class="header_wrap" w3-include-html="./include/header.html"></div>
+    <!-- headerWrap -->
+
+    <main>
+      <article>
+        <section>
+          <div class="page-title">
+            <h2 class="title">아코디언</h2>
+            <p class="title-desc">SK 렌터카의 새로운 소식과 정보들을 한곳에서 확인할 수 있어요.</p>
+          </div>
+        </section>
+        <section>
+          <div class="faq-wrap">
+            <ul>
+              <!-- qna 1set-->
+              <li>
+                <div class="faq-box active">
+                  <div class="q-box">
+                    <p><span class="category">[다이렉트]</span><span class="subject">본인확인은 왜 해야하나요? - 개별움직임</span></p>
                   </div>
-                </li>
-                <!-- //qna 1set-->
-                <li>
-                  <div class="faq-box">
-                    <div class="q-box">
-                      <p><span class="category">[다이렉트]</span><span class="subject">본인확인은 왜 해야하나요?</span></p>
-                    </div>
-                    <div class="a-box">
-                      <p>SK렌터카 다이렉트는 본인확인과 신용심사를 통해 고객님에게 맞는 정확한 견적과 렌탈료를 제공합니다.</p>
-                      <p>타사와 달리 첫 화면에 렌탈료가 노출되지 않는 건 고객님께 정확한 렌탈료를 빠르게 제공하기 위한 목적입니다.</p>
-                      <p>또한 금융사와 달리 신용조회를 반복하여도 신용등급에는 영향을 미치지 않으니 걱정하지 마세요.</p>
-                    </div>
+                  <div class="a-box">
+                    <p>SK렌터카 다이렉트는 본인확인과 신용심사를 통해 고객님에게 맞는 정확한 견적과 렌탈료를 제공합니다.</p>
+                    <p>타사와 달리 첫 화면에 렌탈료가 노출되지 않는 건 고객님께 정확한 렌탈료를 빠르게 제공하기 위한 목적입니다.</p>
+                    <p>또한 금융사와 달리 신용조회를 반복하여도 신용등급에는 영향을 미치지 않으니 걱정하지 마세요.</p>
                   </div>
-                </li>
-              </ul>
-            </div>
+                </div>
+              </li>
+              <!-- //qna 1set-->
+              <li>
+                <div class="faq-box">
+                  <div class="q-box">
+                    <p><span class="category">[다이렉트]</span><span class="subject">본인확인은 왜 해야하나요?</span></p>
+                  </div>
+                  <div class="a-box">
+                    <p>SK렌터카 다이렉트는 본인확인과 신용심사를 통해 고객님에게 맞는 정확한 견적과 렌탈료를 제공합니다.</p>
+                    <p>타사와 달리 첫 화면에 렌탈료가 노출되지 않는 건 고객님께 정확한 렌탈료를 빠르게 제공하기 위한 목적입니다.</p>
+                    <p>또한 금융사와 달리 신용조회를 반복하여도 신용등급에는 영향을 미치지 않으니 걱정하지 마세요.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
 
-            <pre class="theme-codepen-embed">
+          <pre class="theme-codepen-embed">
               <code class="language-html">&#x3C;div class=&#x22;faq-wrap&#x22;&#x3E;
   &#x3C;ul&#x3E;
     &#x3C;!-- qna 1set--&#x3E;
@@ -100,57 +102,64 @@
   &#x3C;/ul&#x3E;
 &#x3C;/div&#x3E;</code>
             </pre>
-          </section>
+        </section>
 
-          <section>
-            <div class="accordion qna">
-              <!-- 아코디언 1세트 -->
-              <div class="accordion-item">
-                <button id="accordion-button-1" aria-expanded="false">
-                  <span class="category">[다이렉트]</span>
-                  <span class="accordion-title">즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. - 연동움직임</span></span>
-                </button>
-                <div class="accordion-content">
-                  <p>
-                    즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트
-                    개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹
-                    생활을 위한 사이트 개편이 시작 됩니다.
-                  </p>
-                </div>
+        <section>
+          <div class="accordion qna">
+            <!-- 아코디언 1세트 -->
+            <div class="accordion-item">
+              <button id="accordion-button-1" aria-expanded="false">
+                <span class="category">[다이렉트]</span>
+                <span class="accordion-title">즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. - 연동움직임</span></span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한
+                  사이트
+                  개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운
+                  웹
+                  생활을 위한 사이트 개편이 시작 됩니다.
+                </p>
               </div>
-              <!-- //아코디언 1세트 -->
+            </div>
+            <!-- //아코디언 1세트 -->
 
-              <div class="accordion-item">
-                <button id="accordion-button-1" aria-expanded="false">
-                  <span class="category">[다이렉트]</span>
-                  <span class="accordion-title">즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다.</span></span>
-                </button>
-                <div class="accordion-content">
-                  <p>
-                    즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트
-                    개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹
-                    생활을 위한 사이트 개편이 시작 됩니다.즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작
-                    됩니다. 
-                  </p>
-                </div>
+            <div class="accordion-item">
+              <button id="accordion-button-1" aria-expanded="false">
+                <span class="category">[다이렉트]</span>
+                <span class="accordion-title">즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다.</span></span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한
+                  사이트
+                  개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운
+                  웹
+                  생활을 위한 사이트 개편이 시작 됩니다.즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이
+                  시작
+                  됩니다.
+                </p>
               </div>
-              <div class="accordion-item">
-                <button id="accordion-button-1" aria-expanded="false">
-                  <span class="category">[다이렉트]</span>
-                  <span class="accordion-title">즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다.</span></span>
-                </button>
-                <div class="accordion-content">
-                  <p>
-                    즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트
-                    개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹
-                    생활을 위한 사이트 개편이 시작 됩니다.
-                  </p>
-                </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-1" aria-expanded="false">
+                <span class="category">[다이렉트]</span>
+                <span class="accordion-title">즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다.</span></span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한
+                  사이트
+                  개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운 웹 생활을 위한 사이트 개편이 시작 됩니다. 즐거운
+                  웹
+                  생활을 위한 사이트 개편이 시작 됩니다.
+                </p>
               </div>
-              
             </div>
 
-            <pre class="theme-codepen-embed">
+          </div>
+
+          <pre class="theme-codepen-embed">
               <code class="language-html">&#x3C;div class=&#x22;accordion qna&#x22;&#x3E;
   &#x3C;!-- &#xC544;&#xCF54;&#xB514;&#xC5B8; 1&#xC138;&#xD2B8; --&#x3E;
   &#x3C;div class=&#x22;accordion-item&#x22;&#x3E;
@@ -198,38 +207,38 @@
   
 &#x3C;/div&#x3E;</code>
             </pre>
-          </section>
-        </article>
+        </section>
+      </article>
 
-        <!-- quick -->
-        <article class="quick" w3-include-html="./include/quick.html"></article>
-        <!-- //quick -->
-      </main>
+      <!-- quick -->
+      <article class="quick" w3-include-html="./include/quick.html"></article>
+      <!-- //quick -->
+    </main>
 
-      <!-- footer -->
-      <footer w3-include-html="./include/footer.html"></footer>
-      <!-- //footer -->
-    </div>
-  </body>
-  <script src="../../../assets/pc/js/ui.js"></script>
+    <!-- footer -->
+    <footer w3-include-html="./include/footer.html"></footer>
+    <!-- //footer -->
+  </div>
+</body>
+<script src="../../../assets/pc/js/ui.js"></script>
+<script>
+  includeHTML();
+  //아코디언
+  const items = document.querySelectorAll(".accordion button");
 
-  <script>
-    includeHTML();
-    //아코디언
-    const items = document.querySelectorAll(".accordion button");
+  function toggleAccordion() {
+    const itemToggle = this.getAttribute("aria-expanded");
 
-    function toggleAccordion() {
-      const itemToggle = this.getAttribute("aria-expanded");
-
-      for (i = 0; i < items.length; i++) {
-        items[i].setAttribute("aria-expanded", "false");
-      }
-
-      if (itemToggle == "false") {
-        this.setAttribute("aria-expanded", "true");
-      }
+    for (i = 0; i < items.length; i++) {
+      items[i].setAttribute("aria-expanded", "false");
     }
 
-    items.forEach((item) => item.addEventListener("click", toggleAccordion));
-  </script>
+    if (itemToggle == "false") {
+      this.setAttribute("aria-expanded", "true");
+    }
+  }
+
+  items.forEach((item) => item.addEventListener("click", toggleAccordion));
+</script>
+
 </html>

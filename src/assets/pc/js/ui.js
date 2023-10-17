@@ -53,20 +53,14 @@ function tabInTab() {
 }
 
 // 패밀리사이트 셀렉트박스 스크립트
-const selectBoxElements = document.querySelectorAll(".FamilySite");
+const familyElements = document.querySelectorAll(".FamilySite");
 
-function toggleSelectBox(selectBox) {
-  selectBox.classList.toggle("active");
+function toggleSelectBox(familyBox) {
+  familyBox.classList.toggle("active");
 }
 
-// function selectOption(optionElement) { //선택옵션 셀렉트 박스에 반영하기
-//   const selectBox = optionElement.closest(".FamilySite");
-//   const selectedElement = selectBox.querySelector(".selected-value");
-//   selectedElement.textContent = optionElement.textContent;
-// }
-
-selectBoxElements.forEach((selectBoxElement) => {
-  selectBoxElement.addEventListener("click", function (e) {
+familyElements.forEach((familyBoxElement) => {
+  familyBoxElement.addEventListener("click", function (e) {
     const targetElement = e.target;
     const isOptionElement = targetElement.classList.contains("option");
 
@@ -74,7 +68,7 @@ selectBoxElements.forEach((selectBoxElement) => {
       selectOption(targetElement);
     }
 
-    toggleSelectBox(selectBoxElement);
+    toggleSelectBox(familyBoxElement);
   });
 });
 
@@ -86,42 +80,12 @@ document.addEventListener("click", function (e) {
     return;
   }
 
-  const allSelectBoxElements = document.querySelectorAll(".FamilySite");
+  const allFamilyElements = document.querySelectorAll(".FamilySite");
 
-  allSelectBoxElements.forEach((boxElement) => {
+  allFamilyElements.forEach((boxElement) => {
     boxElement.classList.remove("active");
   });
 });
-
-// 모바일 사업자정보 펼침 토글
-function moreView() {
-  let menu = document.querySelector(".info-detail");
-  menu.classList.toggle("active");
-}
-
-//인풋박스 초기화버튼 커스터마이징
-var btnClear = document.querySelectorAll(".btnClear");
-btnClear.forEach(function (btn) {
-  btn.addEventListener("click", function () {
-    btn.parentNode.querySelector("input").value = "";
-  });
-});
-
-// qna
-var acc = document.getElementsByClassName("q-box");
-var i;
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.parentNode.classList.toggle("active");
-    var panel = this.nextElementSibling;
-
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
 
 /******************************
 ///////팝업스크립트
@@ -144,3 +108,47 @@ for (var j = 0; j < target.length; j++) {
     this.parentNode.parentNode.parentNode.style.display = "none";
   });
 }
+
+/******************************
+///////드롭다운
+******************************/
+const draptBoxElements = document.querySelectorAll(".dropdown-box");
+
+function toggleSelectBox(drapBox) {
+  drapBox.classList.toggle("active");
+}
+
+function selectOption(optionElement) {
+  //선택옵션 셀렉트 박스에 반영하기
+  const drapBox = optionElement.closest(".dropdown-box");
+  const drapedElement = drapBox.querySelector(".droped-value");
+  drapedElement.textContent = optionElement.textContent;
+}
+
+draptBoxElements.forEach((selectBoxElement) => {
+  selectBoxElement.addEventListener("click", function (e) {
+    const targetElement = e.target;
+    const isOptionElement = targetElement.classList.contains("option");
+
+    if (isOptionElement) {
+      selectOption(targetElement);
+    }
+
+    toggleSelectBox(selectBoxElement);
+  });
+});
+
+document.addEventListener("click", function (e) {
+  const targetElement = e.target;
+  const isFool = targetElement.classList.contains("select") || targetElement.closest(".dropdown-box");
+
+  if (isFool) {
+    return;
+  }
+
+  const allDriptBoxElements = document.querySelectorAll(".dropdown-box");
+
+  allDriptBoxElements.forEach((boxElement) => {
+    boxElement.classList.remove("active");
+  });
+});

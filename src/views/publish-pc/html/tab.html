@@ -1,74 +1,212 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
 
-    <title>게시판 샘플</title>
-    <link rel="stylesheet" type="text/css" href="../../../assets/pc/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="list.css" />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, inital-scale=1.0" />
 
-    <script src="include.js"></script>
+  <title>게시판 샘플</title>
+  <link rel="stylesheet" type="text/css" href="../../../assets/pc/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="list.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+  <script src="include.js"></script>
 
-    <!-- and it's easy to individually load additional languages -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 
-    <script>
-      hljs.highlightAll();
-    </script>
-  </head>
-  <body>
-    <div class="wrap">
-      <!-- headerWrap -->
-      <div class="header_wrap" w3-include-html="./include/header.html"></div>
-      <!-- headerWrap -->
-
-      <main>
-        <article>
-          <section>
-            <div class="page-title">
-              <h2 class="title">텍스트에어리어</h2>
-              <p class="title-desc">SK 렌터카의 새로운 소식과 정보들을 한곳에서 확인할 수 있어요.</p>
-            </div>
-          </section>
-
-          <section>
-            <p class="clause">textarea</p>
-            <div class="wrap-textarea">
-              <div class="box-textarea md">
-                <textarea placeholder="textarea."></textarea>
-              </div>
-              <p class="txt-cnt"><span>0</span>/500</p>
-            </div>
-
-            <pre class="theme-codepen-embed">
-              <code class="language-html">&#x3C;div class=&#x22;wrap-textarea&#x22;&#x3E;
-  &#x3C;div class=&#x22;box-textarea md&#x22;&#x3E;
-    &#x3C;textarea placeholder=&#x22;textarea.&#x22;&#x3E;&#x3C;/textarea&#x3E;
-  &#x3C;/div&#x3E;
-  &#x3C;p class=&#x22;txt-cnt&#x22;&#x3E;&#x3C;span&#x3E;0&#x3C;/span&#x3E;/500&#x3C;/p&#x3E;
-&#x3C;/div&#x3E;</code>
-            </pre>
-          </section>
-        </article>
-
-        <!-- quick -->
-        <article class="quick" w3-include-html="./include/quick.html"></article>
-        <!-- //quick -->
-      </main>
-
-      <!-- footer -->
-      <footer w3-include-html="./include/footer.html"></footer>
-      <!-- //footer -->
-    </div>
-  </body>
-  <script src="../../../assets/pc/js/ui.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
 
   <script>
-    includeHTML();
+    hljs.highlightAll();
   </script>
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- headerWrap -->
+    <div class="header_wrap" w3-include-html="./include/header.html"></div>
+    <!-- headerWrap -->
+
+    <main>
+      <article>
+        <section>
+          <div class="page-title">
+            <h2 class="title">탭</h2>
+            <p class="title-desc">SK 렌터카의 새로운 소식과 정보들을 한곳에서 확인할 수 있어요.</p>
+          </div>
+        </section>
+
+        <section>
+          <p class="clause">tab type 1</p>
+          <div class="tab-wrap">
+            <div class="tab">
+              <div class="tab-button-wrap">
+                <button class="tablinks active" onclick="tabContent2(event, 'Status01')">탭라벨1</button>
+                <button class="tablinks" onclick="tabContent2(event, 'Status02')">탭라벨2</button>
+                <button class="tablinks" onclick="tabContent2(event, 'Status03')">탭라벨3</button>
+              </div>
+            </div>
+
+            <div id="Status01" class="tabcontent active">
+              <div class="tabcontent-wrap">탭 컨텐츠1</div>
+            </div>
+
+            <div id="Status02" class="tabcontent">
+              <div class="tabcontent-wrap">탭 컨텐츠2</div>
+            </div>
+
+            <div id="Status03" class="tabcontent">
+              <div class="tabcontent-wrap">탭 컨텐츠3</div>
+            </div>
+          </div>
+
+          <pre class="theme-codepen-embed">
+              <code class="language-html">&#x3C;div class=&#x22;tab-wrap&#x22;&#x3E;
+  &#x3C;div class=&#x22;tab&#x22;&#x3E;
+    &#x3C;div class=&#x22;tab-button-wrap&#x22;&#x3E;
+      &#x3C;button class=&#x22;tablinks active&#x22; onclick=&#x22;tabContent2(event, &#x27;Status01&#x27;)&#x22;&#x3E;&#xD0ED;&#xB77C;&#xBCA8;1&#x3C;/button&#x3E;
+      &#x3C;button class=&#x22;tablinks&#x22; onclick=&#x22;tabContent2(event, &#x27;Status02&#x27;)&#x22;&#x3E;&#xD0ED;&#xB77C;&#xBCA8;2&#x3C;/button&#x3E;
+      &#x3C;button class=&#x22;tablinks&#x22; onclick=&#x22;tabContent2(event, &#x27;Status03&#x27;)&#x22;&#x3E;&#xD0ED;&#xB77C;&#xBCA8;3&#x3C;/button&#x3E;
+    &#x3C;/div&#x3E;
+  &#x3C;/div&#x3E;
+
+  &#x3C;div id=&#x22;Status01&#x22; class=&#x22;tabcontent active&#x22;&#x3E;
+    &#x3C;div class=&#x22;tabcontent-wrap&#x22;&#x3E;&#xD0ED; &#xCEE8;&#xD150;&#xCE20;1&#x3C;/div&#x3E;
+  &#x3C;/div&#x3E;
+
+  &#x3C;div id=&#x22;Status02&#x22; class=&#x22;tabcontent&#x22;&#x3E;
+    &#x3C;div class=&#x22;tabcontent-wrap&#x22;&#x3E;&#xD0ED; &#xCEE8;&#xD150;&#xCE20;2&#x3C;/div&#x3E;
+  &#x3C;/div&#x3E;
+
+  &#x3C;div id=&#x22;Status03&#x22; class=&#x22;tabcontent&#x22;&#x3E;
+    &#x3C;div class=&#x22;tabcontent-wrap&#x22;&#x3E;&#xD0ED; &#xCEE8;&#xD150;&#xCE20;3&#x3C;/div&#x3E;
+  &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code>
+            </pre>
+        </section>
+
+        <section>
+          <p class="clause">tab type 2</p>
+          <div class="tab2-wrap">
+            <input id="tab-radio1" class="panel-radios panel-1-ctrl" type="radio" name="tab-radios" checked />
+            <input id="tab-radio2" class="panel-radios panel-2-ctrl" type="radio" name="tab-radios" />
+            <input id="tab-radio3" class="panel-radios panel-3-ctrl" type="radio" name="tab-radios" />
+            <input id="tab-radio4" class="panel-radios panel-4-ctrl" type="radio" name="tab-radios" />
+            <input id="tab-radio5" class="panel-radios panel-5-ctrl" type="radio" name="tab-radios" />
+
+            <ul class="tabs-list">
+              <li class="li-for-panel-1">
+                <label class="panel-label" for="tab-radio1">탭라벨1</label>
+              </li>
+              <li class="li-for-panel-2">
+                <label class="panel-label" for="tab-radio2">탭라벨2</label>
+              </li>
+              <li class="li-for-panel-3">
+                <label class="panel-label" for="tab-radio3">탭라벨3</label>
+              </li>
+            </ul>
+
+            <div class="tab-panels">
+              <div class="container">
+                <div class="section panel-1">
+                  <div class="main">탭 컨텐츠1</div>
+                </div>
+              </div>
+              <div class="section panel-2">
+                <div class="main">탭 컨텐츠2</div>
+              </div>
+              <div class="section panel-3">
+                <div class="main">탭 컨텐츠3</div>
+              </div>
+            </div>
+          </div>
+          <!-- </div> -->
+
+          <pre class="theme-codepen-embed">
+              <code class="language-html">&#x3C;div class=&#x22;tab2-wrap&#x22;&#x3E;
+  &#x3C;input
+    id=&#x22;tab-radio1&#x22;
+    class=&#x22;panel-radios panel-1-ctrl&#x22;
+    type=&#x22;radio&#x22;
+    name=&#x22;tab-radios&#x22;
+    checked
+  /&#x3E;
+  &#x3C;input
+    id=&#x22;tab-radio2&#x22;
+    class=&#x22;panel-radios panel-2-ctrl&#x22;
+    type=&#x22;radio&#x22;
+    name=&#x22;tab-radios&#x22;
+  /&#x3E;
+  &#x3C;input
+    id=&#x22;tab-radio3&#x22;
+    class=&#x22;panel-radios panel-3-ctrl&#x22;
+    type=&#x22;radio&#x22;
+    name=&#x22;tab-radios&#x22;
+  /&#x3E;
+  &#x3C;input
+    id=&#x22;tab-radio4&#x22;
+    class=&#x22;panel-radios panel-4-ctrl&#x22;
+    type=&#x22;radio&#x22;
+    name=&#x22;tab-radios&#x22;
+  /&#x3E;
+  &#x3C;input
+    id=&#x22;tab-radio5&#x22;
+    class=&#x22;panel-radios panel-5-ctrl&#x22;
+    type=&#x22;radio&#x22;
+    name=&#x22;tab-radios&#x22;
+  /&#x3E;
+  &#x3C;ul class=&#x22;tabs-list&#x22;&#x3E;
+    &#x3C;li class=&#x22;li-for-panel-1&#x22;&#x3E;
+      &#x3C;label class=&#x22;panel-label&#x22; for=&#x22;tab-radio1&#x22;&#x3E;&#xD0ED;&#xB77C;&#xBCA8;1&#x3C;/label&#x3E;
+    &#x3C;/li&#x3E;
+    &#x3C;li class=&#x22;li-for-panel-2&#x22;&#x3E;
+      &#x3C;label class=&#x22;panel-label&#x22; for=&#x22;tab-radio2&#x22;&#x3E;&#xD0ED;&#xB77C;&#xBCA8;2&#x3C;/label&#x3E;
+    &#x3C;/li&#x3E;
+    &#x3C;li class=&#x22;li-for-panel-3&#x22;&#x3E;
+      &#x3C;label class=&#x22;panel-label&#x22; for=&#x22;tab-radio3&#x22;&#x3E;&#xD0ED;&#xB77C;&#xBCA8;3&#x3C;/label&#x3E;
+    &#x3C;/li&#x3E;
+  &#x3C;/ul&#x3E;
+  &#x3C;div class=&#x22;tab-panels&#x22;&#x3E;
+    &#x3C;div class=&#x22;container&#x22;&#x3E;
+      &#x3C;div class=&#x22;section panel-1&#x22;&#x3E;
+        &#x3C;div class=&#x22;main&#x22;&#x3E;
+          &#xD0ED; &#xCEE8;&#xD150;&#xCE20;1
+          &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+      &#x3C;/div&#x3E;
+      &#x3C;div class=&#x22;section panel-2&#x22;&#x3E;
+        &#x3C;div class=&#x22;main&#x22;&#x3E;
+          &#xD0ED; &#xCEE8;&#xD150;&#xCE20;2
+        &#x3C;/div&#x3E;
+      &#x3C;/div&#x3E;
+      &#x3C;div class=&#x22;section panel-3&#x22;&#x3E;
+        &#x3C;div class=&#x22;main&#x22;&#x3E;
+          &#xD0ED; &#xCEE8;&#xD150;&#xCE20;3
+        &#x3C;/div&#x3E;
+      &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+  &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code>
+            </pre>
+        </section>
+      </article>
+
+      <!-- quick -->
+      <article class="quick" w3-include-html="./include/quick.html"></article>
+      <!-- //quick -->
+    </main>
+
+    <!-- footer -->
+    <footer w3-include-html="./include/footer.html"></footer>
+    <!-- //footer -->
+  </div>
+</body>
+<script src="../../../assets/pc/js/ui.js"></script>
+
+<script>
+  includeHTML();
+</script>
+
 </html>

@@ -1,68 +1,70 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
 
-    <title>게시판 샘플</title>
-    <!-- <link rel="stylesheet" type="text/css" href="/src/assets/fonts.css" /> -->
-    <link rel="stylesheet" type="text/css" href="../../../assets/pc/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="list.css" />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, inital-scale=1.0" />
 
-    <script src="include.js"></script>
+  <title>게시판 샘플</title>
+  <!-- <link rel="stylesheet" type="text/css" href="/src/assets/fonts.css" /> -->
+  <link rel="stylesheet" type="text/css" href="../../../assets/pc/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="list.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+  <script src="include.js"></script>
 
-    <!-- and it's easy to individually load additional languages -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 
-    <script>
-      hljs.highlightAll();
-    </script>
-  </head>
-  <body>
-    <div class="wrap">
-      <!-- headerWrap -->
-      <div class="header_wrap" w3-include-html="./include/header.html"></div>
-      <!-- headerWrap -->
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
 
-      <main>
-        <article>
-          <section>
-            <div class="page-title">
-              <h2 class="title">텍스트에어리어</h2>
-              <p class="title-desc">SK 렌터카의 새로운 소식과 정보들을 한곳에서 확인할 수 있어요.</p>
-            </div>
-          </section>
+  <script>
+    hljs.highlightAll();
+  </script>
+</head>
 
-          <section>
-            <p class="clause">카드</p>
-            <div class="product-list">
-              <div class="card-box">
-                <div class="card-bullet">sdf</div>
-                <div class="cards">
-                  <div class="card-thum">
-                    <a href=""><img src="https://via.placeholder.com/333x208" alt="상품이미지" /></a>
+<body>
+  <div class="wrap">
+    <!-- headerWrap -->
+    <div class="header_wrap" w3-include-html="./include/header.html"></div>
+    <!-- headerWrap -->
+
+    <main>
+      <article>
+        <section>
+          <div class="page-title">
+            <h2 class="title">텍스트에어리어</h2>
+            <p class="title-desc">SK 렌터카의 새로운 소식과 정보들을 한곳에서 확인할 수 있어요.</p>
+          </div>
+        </section>
+
+        <section>
+          <p class="clause">카드</p>
+          <div class="product-list">
+            <div class="card-box">
+              <div class="card-bullet">sdf</div>
+              <div class="cards">
+                <div class="card-thum">
+                  <a href=""><img src="https://via.placeholder.com/333x208" alt="상품이미지" /></a>
+                </div>
+                <div class="card-content">
+                  <div class="">
+                    <div class="title"><a href="">제품 이름</a></div>
+                    <div class="resource-box"><span>2020년식</span><span>10,762km</span><span>경유</span></div>
+                    <div class="bdg-box"><span>사고등급 A</span><span>외관등급 B</span></div>
                   </div>
-                  <div class="card-content">
-                    <div class="">
-                      <div class="title"><a href="">제품 이름</a></div>
-                      <div class="resource-box"><span>2020년식</span><span>10,762km</span><span>경유</span></div>
-                      <div class="bdg-box"><span>사고등급 A</span><span>외관등급 B</span></div>
-                    </div>
-                    <div class="price-box">
-                      <div class="price"><span>2,196</span><em class="unit">만원</em></div>
-                      <div class="sale">40% 할인</div>
-                    </div>
+                  <div class="price-box">
+                    <div class="price"><span>2,196</span><em class="unit">만원</em></div>
+                    <div class="sale">40% 할인</div>
                   </div>
                 </div>
-                <div class="btn-box"><button class="primary">비교하기</button><button class="">상담하기</button></div>
               </div>
+              <div class="btn-box"><button class="primary">비교하기</button><button class="">상담하기</button></div>
             </div>
+          </div>
 
-            <pre class="theme-codepen-embed">
+          <pre class="theme-codepen-embed">
               <code class="language-html">&#x3C;div class=&#x22;card-box&#x22;&#x3E;
   &#x3C;div class=&#x22;card-bullet&#x22;&#x3E;sdf&#x3C;/div&#x3E;
   &#x3C;div class=&#x22;cards&#x22;&#x3E;
@@ -84,47 +86,48 @@
   &#x3C;div class=&#x22;btn-box&#x22;&#x3E;&#x3C;button class=&#x22;primary&#x22;&#x3E;&#xBE44;&#xAD50;&#xD558;&#xAE30;&#x3C;/button&#x3E;&#x3C;button class=&#x22;&#x22;&#x3E;&#xC0C1;&#xB2F4;&#xD558;&#xAE30;&#x3C;/button&#x3E;&#x3C;/div&#x3E;
 &#x3C;/div&#x3E;</code>
             </pre>
-          </section>
+        </section>
 
-          <section>
-            <p class="clause">카드 - 이미지 하단</p>
-            <div class="card-box r-colm">
-              <div class="card-bullet">sdf</div>
-              <div class="cards">
-                <div class="card-thum">
-                  <a href=""><img src="https://via.placeholder.com/333x208" alt="상품이미지" /></a>
+        <section>
+          <p class="clause">카드 - 이미지 하단</p>
+          <div class="card-box r-colm">
+            <div class="card-bullet">sdf</div>
+            <div class="cards">
+              <div class="card-thum">
+                <a href=""><img src="https://via.placeholder.com/333x208" alt="상품이미지" /></a>
+              </div>
+              <div class="card-content">
+                <div class="">
+                  <div class="title"><a href="">제품 이름</a></div>
+                  <div class="resource-box"><span>2020년식</span><span>10,762km</span><span>경유</span></div>
+                  <div class="bdg-box"><span>사고등급 A</span><span>외관등급 B</span></div>
                 </div>
-                <div class="card-content">
-                  <div class="">
-                    <div class="title"><a href="">제품 이름</a></div>
-                    <div class="resource-box"><span>2020년식</span><span>10,762km</span><span>경유</span></div>
-                    <div class="bdg-box"><span>사고등급 A</span><span>외관등급 B</span></div>
-                  </div>
-                  <div class="price-box">
-                    <div class="price"><span>2,196</span><em class="unit">만원</em></div>
-                    <div class="sale">40% 할인</div>
-                  </div>
+                <div class="price-box">
+                  <div class="price"><span>2,196</span><em class="unit">만원</em></div>
+                  <div class="sale">40% 할인</div>
                 </div>
               </div>
-              <div class="btn-box"><button class="primary">비교하기</button><button class="">상담하기</button></div>
             </div>
+            <div class="btn-box"><button class="primary">비교하기</button><button class="">상담하기</button></div>
           </div>
-          </section>
-        </article>
+  </div>
+  </section>
+  </article>
 
-        <!-- quick -->
-        <article class="quick" w3-include-html="./include/quick.html"></article>
-        <!-- //quick -->
-      </main>
+  <!-- quick -->
+  <article class="quick" w3-include-html="./include/quick.html"></article>
+  <!-- //quick -->
+  </main>
 
-      <!-- footer -->
-      <footer w3-include-html="./include/footer.html"></footer>
-      <!-- //footer -->
-    </div>
-  </body>
-  <script src="../../../assets/pc/js/ui.js"></script>
+  <!-- footer -->
+  <footer w3-include-html="./include/footer.html"></footer>
+  <!-- //footer -->
+  </div>
+</body>
+<script src="../../../assets/pc/js/ui.js"></script>
 
-  <script>
-    includeHTML();
-  </script>
+<script>
+  includeHTML();
+</script>
+
 </html>

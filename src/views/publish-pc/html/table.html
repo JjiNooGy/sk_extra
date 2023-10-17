@@ -1,74 +1,256 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
 
-    <title>게시판 샘플</title>
-    <link rel="stylesheet" type="text/css" href="../../../assets/pc/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="list.css" />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, inital-scale=1.0" />
 
-    <script src="include.js"></script>
+  <title>게시판 샘플</title>
+  <link rel="stylesheet" type="text/css" href="../../../assets/pc/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="list.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+  <script src="include.js"></script>
 
-    <!-- and it's easy to individually load additional languages -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 
-    <script>
-      hljs.highlightAll();
-    </script>
-  </head>
-  <body>
-    <div class="wrap">
-      <!-- headerWrap -->
-      <div class="header_wrap" w3-include-html="./include/header.html"></div>
-      <!-- headerWrap -->
-
-      <main>
-        <article>
-          <section>
-            <div class="page-title">
-              <h2 class="title">텍스트에어리어</h2>
-              <p class="title-desc">SK 렌터카의 새로운 소식과 정보들을 한곳에서 확인할 수 있어요.</p>
-            </div>
-          </section>
-
-          <section>
-            <p class="clause">textarea</p>
-            <div class="wrap-textarea">
-              <div class="box-textarea md">
-                <textarea placeholder="textarea."></textarea>
-              </div>
-              <p class="txt-cnt"><span>0</span>/500</p>
-            </div>
-
-            <pre class="theme-codepen-embed">
-              <code class="language-html">&#x3C;div class=&#x22;wrap-textarea&#x22;&#x3E;
-  &#x3C;div class=&#x22;box-textarea md&#x22;&#x3E;
-    &#x3C;textarea placeholder=&#x22;textarea.&#x22;&#x3E;&#x3C;/textarea&#x3E;
-  &#x3C;/div&#x3E;
-  &#x3C;p class=&#x22;txt-cnt&#x22;&#x3E;&#x3C;span&#x3E;0&#x3C;/span&#x3E;/500&#x3C;/p&#x3E;
-&#x3C;/div&#x3E;</code>
-            </pre>
-          </section>
-        </article>
-
-        <!-- quick -->
-        <article class="quick" w3-include-html="./include/quick.html"></article>
-        <!-- //quick -->
-      </main>
-
-      <!-- footer -->
-      <footer w3-include-html="./include/footer.html"></footer>
-      <!-- //footer -->
-    </div>
-  </body>
-  <script src="../../../assets/pc/js/ui.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
 
   <script>
-    includeHTML();
+    hljs.highlightAll();
   </script>
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- headerWrap -->
+    <div class="header_wrap" w3-include-html="./include/header.html"></div>
+    <!-- headerWrap -->
+
+    <main>
+      <article>
+        <section>
+          <div class="page-title">
+            <h2 class="title">텍스트에어리어</h2>
+            <p class="title-desc">SK 렌터카의 새로운 소식과 정보들을 한곳에서 확인할 수 있어요.</p>
+          </div>
+        </section>
+
+        <section>
+          <p class="clause">게시판</p>
+          <div class="board-wrap">
+            <table>
+              <colgroup>
+                <col width="90px" />
+                <col width="auto" />
+                <col width="150px" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">타이틀</th>
+                  <th scope="col">타이틀</th>
+                  <th scope="col">타이틀</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row"><span class="badge">공지</span></td>
+                  <td>
+                    <a href="" title="공지사항 제목"><span class="category">[안내]</span>링크영역</a>
+                  </td>
+                  <td>2013-08-17</td>
+                </tr>
+                <tr>
+                  <td scope="row">10.</td>
+                  <td>
+                    <a href="" title="공지사항 제목"><span class="category">[안내]</span>링크영역</a>
+                  </td>
+                  <td>2013-08-17</td>
+                </tr>
+
+                <tr>
+                  <td scope="row">9.</td>
+                  <td>
+                    <a href="" title="공지사항 제목"><span class="category">[안내]</span>링크영역</a>
+                  </td>
+                  <td>2013-08-17</td>
+                </tr>
+
+                <tr>
+                  <td scope="row">8.</td>
+                  <td>
+                    <a href="" title="공지사항 제목"><span class="category">[안내]</span>링크영역</a>
+                  </td>
+                  <td>2013-08-17</td>
+                </tr>
+
+                <tr>
+                  <td scope="row">7.</td>
+                  <td>
+                    <a href="" title="공지사항 제목"><span class="category">[안내]</span>링크영역</a>
+                  </td>
+                  <td>2013-08-17</td>
+                </tr>
+                <tr>
+                  <td scope="row">6.</td>
+                  <td>
+                    <a href="" title="공지사항 제목"><span class="category">[안내]</span>링크영역</a>
+                  </td>
+                  <td>2013-08-17</td>
+                </tr>
+                <tr>
+                  <td scope="row">5.</td>
+                  <td>
+                    <a href="" title="공지사항 제목"><span class="category">[안내]</span>링크영역</a>
+                  </td>
+                  <td>2013-08-17</td>
+                </tr>
+                <tr>
+                  <td scope="row">4.</td>
+                  <td>
+                    <a href="" title="공지사항 제목"><span class="category">[안내]</span>링크영역</a>
+                  </td>
+                  <td>2013-08-17</td>
+                </tr>
+                <tr>
+                  <td scope="row">3.</td>
+                  <td>
+                    <a href="" title="공지사항 제목"><span class="category">[안내]</span>링크영역</a>
+                  </td>
+                  <td>2013-08-17</td>
+                </tr>
+                <tr>
+                  <td scope="row">2.</td>
+                  <td>
+                    <a href="" title="공지사항 제목"><span class="category">[안내]</span>링크영역</a>
+                  </td>
+                  <td>2013-08-17</td>
+                </tr>
+                <tr>
+                  <td scope="row">1.</td>
+                  <td>
+                    <a href="" title="공지사항 제목"><span class="category">[안내]</span>링크영역</a>
+                  </td>
+                  <td>2013-08-17</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <pre class="theme-codepen-embed">
+              <code class="language-html">&#x3C;div class=&#x22;board-wrap&#x22;&#x3E;
+  &#x3C;table&#x3E;
+    &#x3C;colgroup&#x3E;
+      &#x3C;col width=&#x22;90px&#x22; /&#x3E;
+      &#x3C;col width=&#x22;auto&#x22; /&#x3E;
+      &#x3C;col width=&#x22;150px&#x22; /&#x3E;
+    &#x3C;/colgroup&#x3E;
+    &#x3C;thead&#x3E;
+      &#x3C;tr&#x3E;
+        &#x3C;th scope=&#x22;col&#x22;&#x3E;&#xD0C0;&#xC774;&#xD2C0;&#x3C;/th&#x3E;
+        &#x3C;th scope=&#x22;col&#x22;&#x3E;&#xD0C0;&#xC774;&#xD2C0;&#x3C;/th&#x3E;
+        &#x3C;th scope=&#x22;col&#x22;&#x3E;&#xD0C0;&#xC774;&#xD2C0;&#x3C;/th&#x3E;
+      &#x3C;/tr&#x3E;
+    &#x3C;/thead&#x3E;
+    &#x3C;tbody&#x3E;
+      &#x3C;tr&#x3E;
+        &#x3C;td scope=&#x22;row&#x22;&#x3E;&#x3C;span class=&#x22;badge&#x22;&#x3E;&#xACF5;&#xC9C0;&#x3C;/span&#x3E;&#x3C;/td&#x3E;
+        &#x3C;td&#x3E;
+          &#x3C;a href=&#x22;&#x22; title=&#x22;&#xACF5;&#xC9C0;&#xC0AC;&#xD56D; &#xC81C;&#xBAA9;&#x22;&#x3E;&#x3C;span class=&#x22;category&#x22;&#x3E;[&#xC548;&#xB0B4;]&#x3C;/span&#x3E;&#xB9C1;&#xD06C;&#xC601;&#xC5ED;&#x3C;/a&#x3E;
+        &#x3C;/td&#x3E;
+        &#x3C;td&#x3E;2013-08-17&#x3C;/td&#x3E;
+      &#x3C;/tr&#x3E;
+      &#x3C;tr&#x3E;
+        &#x3C;td scope=&#x22;row&#x22;&#x3E;10.&#x3C;/td&#x3E;
+        &#x3C;td&#x3E;
+          &#x3C;a href=&#x22;&#x22; title=&#x22;&#xACF5;&#xC9C0;&#xC0AC;&#xD56D; &#xC81C;&#xBAA9;&#x22;&#x3E;&#x3C;span class=&#x22;category&#x22;&#x3E;[&#xC548;&#xB0B4;]&#x3C;/span&#x3E;&#xB9C1;&#xD06C;&#xC601;&#xC5ED;&#x3C;/a&#x3E;
+        &#x3C;/td&#x3E;
+        &#x3C;td&#x3E;2013-08-17&#x3C;/td&#x3E;
+      &#x3C;/tr&#x3E;
+
+      &#x3C;tr&#x3E;
+        &#x3C;td scope=&#x22;row&#x22;&#x3E;9.&#x3C;/td&#x3E;
+        &#x3C;td&#x3E;
+          &#x3C;a href=&#x22;&#x22; title=&#x22;&#xACF5;&#xC9C0;&#xC0AC;&#xD56D; &#xC81C;&#xBAA9;&#x22;&#x3E;&#x3C;span class=&#x22;category&#x22;&#x3E;[&#xC548;&#xB0B4;]&#x3C;/span&#x3E;&#xB9C1;&#xD06C;&#xC601;&#xC5ED;&#x3C;/a&#x3E;
+        &#x3C;/td&#x3E;
+        &#x3C;td&#x3E;2013-08-17&#x3C;/td&#x3E;
+      &#x3C;/tr&#x3E;
+
+      ~~~
+      &#x3C;tr&#x3E;
+        &#x3C;td scope=&#x22;row&#x22;&#x3E;1.&#x3C;/td&#x3E;
+        &#x3C;td&#x3E;
+          &#x3C;a href=&#x22;&#x22; title=&#x22;&#xACF5;&#xC9C0;&#xC0AC;&#xD56D; &#xC81C;&#xBAA9;&#x22;&#x3E;&#x3C;span class=&#x22;category&#x22;&#x3E;[&#xC548;&#xB0B4;]&#x3C;/span&#x3E;&#xB9C1;&#xD06C;&#xC601;&#xC5ED;&#x3C;/a&#x3E;
+        &#x3C;/td&#x3E;
+        &#x3C;td&#x3E;2013-08-17&#x3C;/td&#x3E;
+      &#x3C;/tr&#x3E;
+    &#x3C;/tbody&#x3E;
+  &#x3C;/table&#x3E;
+&#x3C;/div&#x3E;</code>
+            </pre>
+        </section>
+
+        <section>
+          <p class="clause">입출력테이블</p>
+          <div class="print-table-wrap">
+            <div class="print-table">
+              <div class="row">
+                <div class="col">
+                  <div class="col-box">
+                    <div class="col-label">
+                      <span>타이틀</span>
+                    </div>
+                    <div class="col-cell">출력값</div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="col-box">
+                    <div class="col-label">
+                      <span>타이틀</span>
+                    </div>
+                    <div class="col-cell">출력값</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="col-box">
+                    <div class="col-label">
+                      <span>타이틀</span>
+                    </div>
+                    <div class="col-cell">출력값</div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="col-box">
+                    <div class="col-label">
+                      <span>타이틀</span>
+                    </div>
+                    <div class="col-cell">출력값</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <!-- quick -->
+      <article class="quick" w3-include-html="./include/quick.html"></article>
+      <!-- //quick -->
+    </main>
+
+    <!-- footer -->
+    <footer w3-include-html="./include/footer.html"></footer>
+    <!-- //footer -->
+  </div>
+</body>
+<script src="../../../assets/pc/js/ui.js"></script>
+
+<script>
+  includeHTML();
+</script>
+
 </html>

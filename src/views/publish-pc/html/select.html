@@ -1,74 +1,99 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
 
-    <title>게시판 샘플</title>
-    <link rel="stylesheet" type="text/css" href="../../../assets/pc/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="list.css" />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, inital-scale=1.0" />
 
-    <script src="include.js"></script>
+  <title>게시판 샘플</title>
+  <link rel="stylesheet" type="text/css" href="../../../assets/pc/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="list.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+  <script src="include.js"></script>
 
-    <!-- and it's easy to individually load additional languages -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 
-    <script>
-      hljs.highlightAll();
-    </script>
-  </head>
-  <body>
-    <div class="wrap">
-      <!-- headerWrap -->
-      <div class="header_wrap" w3-include-html="./include/header.html"></div>
-      <!-- headerWrap -->
-
-      <main>
-        <article>
-          <section>
-            <div class="page-title">
-              <h2 class="title">텍스트에어리어</h2>
-              <p class="title-desc">SK 렌터카의 새로운 소식과 정보들을 한곳에서 확인할 수 있어요.</p>
-            </div>
-          </section>
-
-          <section>
-            <p class="clause">textarea</p>
-            <div class="wrap-textarea">
-              <div class="box-textarea md">
-                <textarea placeholder="textarea."></textarea>
-              </div>
-              <p class="txt-cnt"><span>0</span>/500</p>
-            </div>
-
-            <pre class="theme-codepen-embed">
-              <code class="language-html">&#x3C;div class=&#x22;wrap-textarea&#x22;&#x3E;
-  &#x3C;div class=&#x22;box-textarea md&#x22;&#x3E;
-    &#x3C;textarea placeholder=&#x22;textarea.&#x22;&#x3E;&#x3C;/textarea&#x3E;
-  &#x3C;/div&#x3E;
-  &#x3C;p class=&#x22;txt-cnt&#x22;&#x3E;&#x3C;span&#x3E;0&#x3C;/span&#x3E;/500&#x3C;/p&#x3E;
-&#x3C;/div&#x3E;</code>
-            </pre>
-          </section>
-        </article>
-
-        <!-- quick -->
-        <article class="quick" w3-include-html="./include/quick.html"></article>
-        <!-- //quick -->
-      </main>
-
-      <!-- footer -->
-      <footer w3-include-html="./include/footer.html"></footer>
-      <!-- //footer -->
-    </div>
-  </body>
-  <script src="../../../assets/pc/js/ui.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
 
   <script>
-    includeHTML();
+    hljs.highlightAll();
   </script>
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- headerWrap -->
+    <div class="header_wrap" w3-include-html="./include/header.html"></div>
+    <!-- headerWrap -->
+
+    <main>
+      <article>
+        <section>
+          <div class="page-title">
+            <h2 class="title">셀렉트박스</h2>
+            <p class="title-desc">SK 렌터카의 새로운 소식과 정보들을 한곳에서 확인할 수 있어요.</p>
+          </div>
+        </section>
+
+        <section>
+          <p class="clause">select</p>
+          <span class="select-box fr">
+            <select name="" id="" class="option01">
+              <option value="" selected="">- 선택 -</option>
+              <option value="option01">option01</option>
+              <option value="option02">option02</option>
+              <option value="option03">option03</option>
+              <option value="option04">option04</option>
+              <option value="option05">option05</option>
+              <option value="option06">option06</option>
+            </select>
+          </span>
+
+          <span class="select-box fr">
+            <select name="" id="" class="option01" disabled>
+              <option value="" selected="">- 선택 -</option>
+              <option value="option01">option01</option>
+              <option value="option02">option02</option>
+              <option value="option03">option03</option>
+              <option value="option04">option04</option>
+              <option value="option05">option05</option>
+              <option value="option06">option06</option>
+            </select>
+          </span>
+
+          <pre class="theme-codepen-embed">
+              <code class="language-html">&#x3C;span class=&#x22;select-box fr&#x22;&#x3E;
+  &#x3C;select name=&#x22;&#x22; id=&#x22;&#x22; class=&#x22;option01&#x22;&#x3E;
+    &#x3C;option value=&#x22;&#x22; selected=&#x22;&#x22;&#x3E;- &#xC120;&#xD0DD; -&#x3C;/option&#x3E;
+    &#x3C;option value=&#x22;option01&#x22;&#x3E;option01&#x3C;/option&#x3E;
+    &#x3C;option value=&#x22;option02&#x22;&#x3E;option02&#x3C;/option&#x3E;
+    &#x3C;option value=&#x22;option03&#x22;&#x3E;option03&#x3C;/option&#x3E;
+    &#x3C;option value=&#x22;option04&#x22;&#x3E;option04&#x3C;/option&#x3E;
+    &#x3C;option value=&#x22;option05&#x22;&#x3E;option05&#x3C;/option&#x3E;
+    &#x3C;option value=&#x22;option06&#x22;&#x3E;option06&#x3C;/option&#x3E;
+  &#x3C;/select&#x3E;
+&#x3C;/span&#x3E;</code>
+            </pre>
+        </section>
+      </article>
+
+      <!-- quick -->
+      <article class="quick" w3-include-html="./include/quick.html"></article>
+      <!-- //quick -->
+    </main>
+
+    <!-- footer -->
+    <footer w3-include-html="./include/footer.html"></footer>
+    <!-- //footer -->
+  </div>
+</body>
+<script src="../../../assets/pc/js/ui.js"></script>
+
+<script>
+  includeHTML();
+</script>
+
 </html>

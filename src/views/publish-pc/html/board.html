@@ -1,110 +1,112 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
 
-    <title>게시판 샘플</title>
-    <link rel="stylesheet" type="text/css" href="../../../assets/pc/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="list.css" />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, inital-scale=1.0" />
 
-    <script src="include.js"></script>
+  <title>게시판 샘플</title>
+  <link rel="stylesheet" type="text/css" href="../../../assets/pc/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="list.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+  <script src="include.js"></script>
 
-    <!-- and it's easy to individually load additional languages -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 
-    <script>
-      hljs.highlightAll();
-    </script>
-  </head>
-  <body>
-    <div class="wrap">
-      <!-- headerWrap -->
-      <div class="header_wrap" w3-include-html="./include/header.html"></div>
-      <!-- headerWrap -->
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
 
-      <main>
-        <article>
-          <section>
-            <div class="page-title">
-              <h2 class="title">게시판 샘플 2</h2>
-              <p class="title-desc">SK 렌터카의 새로운 소식과 정보들을 한곳에서 확인할 수 있어요.</p>
-            </div>
-          </section>
-          <section>
-            <div class="board-wrap">
-              <table>
-                <colgroup>
-                  <col width="90px" />
-                  <col width="auto" />
-                  <col width="150px" />
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th scope="col">타이틀</th>
-                    <th scope="col">타이틀</th>
-                    <th scope="col">타이틀</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td scope="row"><span class="badge">공지</span></td>
-                    <td>
-                      <a href="" title="공지사항 제목"><span class="category">[안내]</span>서비스 오픈 안내</a>
-                    </td>
-                    <td>2013-08-17</td>
-                  </tr>
+  <script>
+    hljs.highlightAll();
+  </script>
+</head>
 
-                  <tr>
-                    <td scope="row">1.</td>
-                    <td>
-                      <a href="" title="공지사항 제목"><span class="category">[안내]</span>서비스 오픈 안내</a>
-                    </td>
-                    <td>2013-08-17</td>
-                  </tr>
+<body>
+  <div class="wrap">
+    <!-- headerWrap -->
+    <div class="header_wrap" w3-include-html="./include/header.html"></div>
+    <!-- headerWrap -->
 
-                  <tr>
-                    <td scope="row">2.</td>
-                    <td>
-                      <a href="" title="공지사항 제목"><span class="category">[안내]</span>서비스 오픈 안내</a>
-                    </td>
-                    <td>2013-08-17</td>
-                  </tr>
+    <main>
+      <article>
+        <section>
+          <div class="page-title">
+            <h2 class="title">게시판 샘플 2</h2>
+            <p class="title-desc">SK 렌터카의 새로운 소식과 정보들을 한곳에서 확인할 수 있어요.</p>
+          </div>
+        </section>
+        <section>
+          <div class="board-wrap">
+            <table>
+              <colgroup>
+                <col width="90px" />
+                <col width="auto" />
+                <col width="150px" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">타이틀</th>
+                  <th scope="col">타이틀</th>
+                  <th scope="col">타이틀</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row"><span class="badge">공지</span></td>
+                  <td>
+                    <a href="" title="공지사항 제목"><span class="category">[안내]</span>서비스 오픈 안내</a>
+                  </td>
+                  <td>2013-08-17</td>
+                </tr>
 
-                  <tr>
-                    <td scope="row"></td>
-                    <td><a href="" title="공지사항 제목"></a></td>
-                    <td>2013-08-17</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+                <tr>
+                  <td scope="row">1.</td>
+                  <td>
+                    <a href="" title="공지사항 제목"><span class="category">[안내]</span>서비스 오픈 안내</a>
+                  </td>
+                  <td>2013-08-17</td>
+                </tr>
 
-            <div role="navigation" class="paging-wrap">
-              <a href="" class="first"><span class="hide-txt">첫페이지</span></a>
-              <a href="" class="prev"><span class="hide-txt">이전페이지</span></a>
-              <ol>
-                <li class="page-btn"><a href="page=1">1</a></li>
-                <li class="page-btn"><a href="page=2">2</a></li>
-                <li class="page-btn"><a href="page=3">3</a></li>
-                <li class="page-btn"><a href="page=4">4</a></li>
-                <li class="page-btn"><a href="page=4">5</a></li>
-                <li class="page-btn"><a href="page=4">6</a></li>
-                <li class="page-btn"><a href="page=4">7</a></li>
-                <li class="page-btn"><a href="page=4">8</a></li>
-                <li class="page-btn"><a href="page=4">8</a></li>
-                <li class="page-btn"><a href="page=10" class="this">10</a></li>
-              </ol>
-              <a href="" class="next"><span class="hide-txt">다음페이지</span></a>
-              <a href="" class="last"><span class="hide-txt">마지막페이지</span></a>
-            </div>
-          </section>
-          <section>
-            <pre class="theme-codepen-embed">
+                <tr>
+                  <td scope="row">2.</td>
+                  <td>
+                    <a href="" title="공지사항 제목"><span class="category">[안내]</span>서비스 오픈 안내</a>
+                  </td>
+                  <td>2013-08-17</td>
+                </tr>
+
+                <tr>
+                  <td scope="row"></td>
+                  <td><a href="" title="공지사항 제목"></a></td>
+                  <td>2013-08-17</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div role="navigation" class="paging-wrap">
+            <a href="" class="first"><span class="hide-txt">첫페이지</span></a>
+            <a href="" class="prev"><span class="hide-txt">이전페이지</span></a>
+            <ol>
+              <li class="page-btn"><a href="page=1">1</a></li>
+              <li class="page-btn"><a href="page=2">2</a></li>
+              <li class="page-btn"><a href="page=3">3</a></li>
+              <li class="page-btn"><a href="page=4">4</a></li>
+              <li class="page-btn"><a href="page=4">5</a></li>
+              <li class="page-btn"><a href="page=4">6</a></li>
+              <li class="page-btn"><a href="page=4">7</a></li>
+              <li class="page-btn"><a href="page=4">8</a></li>
+              <li class="page-btn"><a href="page=4">8</a></li>
+              <li class="page-btn"><a href="page=10" class="this">10</a></li>
+            </ol>
+            <a href="" class="next"><span class="hide-txt">다음페이지</span></a>
+            <a href="" class="last"><span class="hide-txt">마지막페이지</span></a>
+          </div>
+        </section>
+        <section>
+          <pre class="theme-codepen-embed">
               <code class="language-html">
                 &#x3C;div class=&#x22;board-wrap&#x22;&#x3E;
                 &#x3C;table&#x3E;
@@ -169,61 +171,61 @@
               &#x3C;/div&#x3E;
               </code>
             </pre>
-          </section>
+        </section>
 
-          <section>
-            <div class="board-view-wrap">
-              <div class="board-title">
-                <p class="title"><span class="category">[안내]</span>8월 동탄매매센터 휴무 일정 안내</p>
-                <div class="writer-info">
-                  <div class="name">작성자</div>
-                  <div class="date">2023-08-28</div>
-                  <div class="file">
-                    <a href="">파일명.확장자</a>
-                    <a href="">파일명.확장자</a>
-                    <a href="">파일명.확장자</a>
-                  </div>
-                </div>
-                <div class="file-box">
+        <section>
+          <div class="board-view-wrap">
+            <div class="board-title">
+              <p class="title"><span class="category">[안내]</span>8월 동탄매매센터 휴무 일정 안내</p>
+              <div class="writer-info">
+                <div class="name">작성자</div>
+                <div class="date">2023-08-28</div>
+                <div class="file">
                   <a href="">파일명.확장자</a>
-                  <a href=""><i class="icon excel"></i>파일명.xls</a>
-                  <a href=""><i class="icon pdf"></i>파일명.pdf</a>
-                  <a href=""><i class="icon hwp"></i>파일명.hwp</a>
-                  <a href=""><i class="icon img"></i>파일명.jpg</a>
-                  <a href=""><i class="icon zip"></i>파일명.zip</a>
+                  <a href="">파일명.확장자</a>
+                  <a href="">파일명.확장자</a>
                 </div>
               </div>
-              <div class="board-content">
-                <p>안녕하세요. SK 렌터카 중고차입니다.</p>
-                <p></p>
-                <p>2023년 05월 02일 오토인사이드 시스템 점검에 따라 사이트 이용이 일시 중지될 예정입니다.</p>
-                <p></p>
-                <p>사이트 점검</p>
-                <p>일자 : 2023년 05월 02일(화)</p>
-                <p>시간 : 07:00 ~ 08:00</p>
-                <p></p>
-                <p>해당시간내에 사이트 접속이 원할하지 않으니 이용에 참고해주시기 바랍니다.</p>
-                <p>서비스 이용에 불편을 드려 죄송합니다.</p>
-              </div>
-              <div class="file-box-bottom">
-                <div class="title"><i class="icon"></i>첨부파일 :</div>
-                <div class="file-list">
-                  <a href="">파일명.확장자</a>
-                  <a href=""><i class="icon excel"></i>파일명.xls</a>
-                  <a href=""><i class="icon pdf"></i>파일명.pdf</a>
-                  <a href=""><i class="icon hwp"></i>파일명.hwp</a>
-                  <a href=""><i class="icon img"></i>파일명.jpg</a>
-                  <a href=""><i class="icon zip"></i>파일명.zip</a>
-                </div>
+              <div class="file-box">
+                <a href="">파일명.확장자</a>
+                <a href=""><i class="icon excel"></i>파일명.xls</a>
+                <a href=""><i class="icon pdf"></i>파일명.pdf</a>
+                <a href=""><i class="icon hwp"></i>파일명.hwp</a>
+                <a href=""><i class="icon img"></i>파일명.jpg</a>
+                <a href=""><i class="icon zip"></i>파일명.zip</a>
               </div>
             </div>
-
-            <div class="btn-box">
-              <button class="btn-primary">목록</button>
+            <div class="board-content">
+              <p>안녕하세요. SK 렌터카 중고차입니다.</p>
+              <p></p>
+              <p>2023년 05월 02일 오토인사이드 시스템 점검에 따라 사이트 이용이 일시 중지될 예정입니다.</p>
+              <p></p>
+              <p>사이트 점검</p>
+              <p>일자 : 2023년 05월 02일(화)</p>
+              <p>시간 : 07:00 ~ 08:00</p>
+              <p></p>
+              <p>해당시간내에 사이트 접속이 원할하지 않으니 이용에 참고해주시기 바랍니다.</p>
+              <p>서비스 이용에 불편을 드려 죄송합니다.</p>
             </div>
-          </section>
-          <section>
-            <pre class="theme-codepen-embed">
+            <div class="file-box-bottom">
+              <div class="title"><i class="icon"></i>첨부파일 :</div>
+              <div class="file-list">
+                <a href="">파일명.확장자</a>
+                <a href=""><i class="icon excel"></i>파일명.xls</a>
+                <a href=""><i class="icon pdf"></i>파일명.pdf</a>
+                <a href=""><i class="icon hwp"></i>파일명.hwp</a>
+                <a href=""><i class="icon img"></i>파일명.jpg</a>
+                <a href=""><i class="icon zip"></i>파일명.zip</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-box">
+            <button class="btn-primary">목록</button>
+          </div>
+        </section>
+        <section>
+          <pre class="theme-codepen-embed">
               <code class="language-html">
 &#x3C;div class=&#x22;board-view-wrap&#x22;&#x3E;
   &#x3C;div class=&#x22;board-title&#x22;&#x3E;
@@ -265,70 +267,67 @@
 &#x3C;/div&#x3E;
               </code>
             </pre>
-          </section>
+        </section>
 
-          <section>
-            <div class="faq-wrap">
-              <ul>
-                <li class="active">
-                  <div class="faq-box">
-                    <div class="q-box">
-                      <a href=""><span class="category">[다이렉트]</span><span class="subject">본인확인은 왜 해야하나요?</span></a>
-                    </div>
-                    <div class="a-box">
-                      <p>SK렌터카 다이렉트는 본인확인과 신용심사를 통해 고객님에게 맞는 정확한 견적과 렌탈료를 제공합니다.</p>
-                      <p>타사와 달리 첫 화면에 렌탈료가 노출되지 않는 건 고객님께 정확한 렌탈료를 빠르게 제공하기 위한 목적입니다.</p>
-                      <p>또한 금융사와 달리 신용조회를 반복하여도 신용등급에는 영향을 미치지 않으니 걱정하지 마세요.</p>
-                    </div>
+        <section>
+          <div class="faq-wrap">
+            <ul>
+              <li class="active">
+                <div class="faq-box">
+                  <div class="q-box">
+                    <a href=""><span class="category">[다이렉트]</span><span class="subject">본인확인은 왜 해야하나요?</span></a>
                   </div>
-                </li>
-                <li class="active">
-                  <div class="faq-box">
-                    <div class="q-box">
-                      <a href=""
-                        ><span class="category">[다이렉트]</span
-                        ><span class="subject"
-                          >본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?본인확인은 왜
-                          해야하나요?본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?</span
-                        ></a
-                      >
-                    </div>
-                    <div class="a-box">
-                      <p>SK렌터카 다이렉트는 본인확인과 신용심사를 통해 고객님에게 맞는 정확한 견적과 렌탈료를 제공합니다.</p>
-                      <p>타사와 달리 첫 화면에 렌탈료가 노출되지 않는 건 고객님께 정확한 렌탈료를 빠르게 제공하기 위한 목적입니다.</p>
-                      <p>또한 금융사와 달리 신용조회를 반복하여도 신용등급에는 영향을 미치지 않으니 걱정하지 마세요.</p>
-                    </div>
+                  <div class="a-box">
+                    <p>SK렌터카 다이렉트는 본인확인과 신용심사를 통해 고객님에게 맞는 정확한 견적과 렌탈료를 제공합니다.</p>
+                    <p>타사와 달리 첫 화면에 렌탈료가 노출되지 않는 건 고객님께 정확한 렌탈료를 빠르게 제공하기 위한 목적입니다.</p>
+                    <p>또한 금융사와 달리 신용조회를 반복하여도 신용등급에는 영향을 미치지 않으니 걱정하지 마세요.</p>
                   </div>
-                </li>
-                <li>
-                  <div class="faq-box">
-                    <div class="q-box"><span class="category">[다이렉트]</span>본인확인은 왜 해야하나요?</div>
-                    <div class="a-box">
-                      <p>SK렌터카 다이렉트는 본인확인과 신용심사를 통해 고객님에게 맞는 정확한 견적과 렌탈료를 제공합니다.</p>
-                      <p>타사와 달리 첫 화면에 렌탈료가 노출되지 않는 건 고객님께 정확한 렌탈료를 빠르게 제공하기 위한 목적입니다.</p>
-                      <p>또한 금융사와 달리 신용조회를 반복하여도 신용등급에는 영향을 미치지 않으니 걱정하지 마세요.</p>
-                    </div>
+                </div>
+              </li>
+              <li class="active">
+                <div class="faq-box">
+                  <div class="q-box">
+                    <a href=""><span class="category">[다이렉트]</span><span class="subject">본인확인은 왜 해야하나요?본인확인은 왜
+                        해야하나요?본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?본인확인은 왜
+                        해야하나요?본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?본인확인은 왜 해야하나요?본인확인은 왜
+                        해야하나요?</span></a>
                   </div>
-                </li>
-                <li>
-                  <div class="faq-box">
-                    <div class="q-box"><span class="category">[다이렉트]</span>본인확인은 왜 해야하나요?</div>
-                    <div class="a-box">
-                      <p>SK렌터카 다이렉트는 본인확인과 신용심사를 통해 고객님에게 맞는 정확한 견적과 렌탈료를 제공합니다.</p>
-                      <p>타사와 달리 첫 화면에 렌탈료가 노출되지 않는 건 고객님께 정확한 렌탈료를 빠르게 제공하기 위한 목적입니다.</p>
-                      <p>또한 금융사와 달리 신용조회를 반복하여도 신용등급에는 영향을 미치지 않으니 걱정하지 마세요.</p>
-                    </div>
+                  <div class="a-box">
+                    <p>SK렌터카 다이렉트는 본인확인과 신용심사를 통해 고객님에게 맞는 정확한 견적과 렌탈료를 제공합니다.</p>
+                    <p>타사와 달리 첫 화면에 렌탈료가 노출되지 않는 건 고객님께 정확한 렌탈료를 빠르게 제공하기 위한 목적입니다.</p>
+                    <p>또한 금융사와 달리 신용조회를 반복하여도 신용등급에는 영향을 미치지 않으니 걱정하지 마세요.</p>
                   </div>
-                </li>
-              </ul>
-            </div>
-          </section>
-          <section>
-            <!-- <pre class="theme-codepen-embed">
+                </div>
+              </li>
+              <li>
+                <div class="faq-box">
+                  <div class="q-box"><span class="category">[다이렉트]</span>본인확인은 왜 해야하나요?</div>
+                  <div class="a-box">
+                    <p>SK렌터카 다이렉트는 본인확인과 신용심사를 통해 고객님에게 맞는 정확한 견적과 렌탈료를 제공합니다.</p>
+                    <p>타사와 달리 첫 화면에 렌탈료가 노출되지 않는 건 고객님께 정확한 렌탈료를 빠르게 제공하기 위한 목적입니다.</p>
+                    <p>또한 금융사와 달리 신용조회를 반복하여도 신용등급에는 영향을 미치지 않으니 걱정하지 마세요.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="faq-box">
+                  <div class="q-box"><span class="category">[다이렉트]</span>본인확인은 왜 해야하나요?</div>
+                  <div class="a-box">
+                    <p>SK렌터카 다이렉트는 본인확인과 신용심사를 통해 고객님에게 맞는 정확한 견적과 렌탈료를 제공합니다.</p>
+                    <p>타사와 달리 첫 화면에 렌탈료가 노출되지 않는 건 고객님께 정확한 렌탈료를 빠르게 제공하기 위한 목적입니다.</p>
+                    <p>또한 금융사와 달리 신용조회를 반복하여도 신용등급에는 영향을 미치지 않으니 걱정하지 마세요.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <!-- <pre class="theme-codepen-embed">
               <code class="language-html"> -->
 
-            <div class="highlight">
-              <pre class="chroma"><code class="language-html" data-lang="html">
+          <div class="highlight">
+            <pre class="chroma"><code class="language-html" data-lang="html">
 &#x3C;div class=&#x22;faq-wrap&#x22;&#x3E;
   &#x3C;ul&#x3E;
     &#x3C;li class=&#x22;active&#x22;&#x3E;
@@ -385,23 +384,24 @@
 &#x3C;/div&#x3E;
               </code>
             </pre>
-            </div>
-          </section>
-        </article>
+          </div>
+        </section>
+      </article>
 
-        <!-- quick -->
-        <article class="quick" w3-include-html="./include/quick.html"></article>
-        <!-- //quick -->
-      </main>
+      <!-- quick -->
+      <article class="quick" w3-include-html="./include/quick.html"></article>
+      <!-- //quick -->
+    </main>
 
-      <!-- footer -->
-      <footer w3-include-html="./include/footer.html"></footer>
-      <!-- //footer -->
-    </div>
-  </body>
-  <script src="../../../assets/pc/js/ui.js"></script>
+    <!-- footer -->
+    <footer w3-include-html="./include/footer.html"></footer>
+    <!-- //footer -->
+  </div>
+</body>
+<script src="../../../assets/pc/js/ui.js"></script>
 
-  <script>
-    includeHTML();
-  </script>
+<script>
+  includeHTML();
+</script>
+
 </html>
