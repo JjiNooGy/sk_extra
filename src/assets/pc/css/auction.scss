@@ -1275,10 +1275,6 @@ button {
   position: relative;
   margin-bottom: 60px;
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
-  // border: 1px solid #dee2e6;
-  // .form-control {
-  //   padding-left: 20px;
-  // }
   .btnClear {
     display: none;
   }
@@ -1366,12 +1362,6 @@ button {
     border: 1px solid #dee2e6;
     background: #fff;
   }
-
-  // .form-control-label {
-  //   &:first-child {
-  //     margin-left: 20px;
-  //   }
-  // }
 
   .forms-box {
     display: flex;
@@ -1487,6 +1477,70 @@ button {
       }
     }
   }
+
+  .dropdown-box {
+    z-index: 1000;
+    position: relative !important;
+    width: 100%;
+    height: auto !important;
+    border: 1px solid #c3caca !important;
+    border-radius: 5px !important;
+    color: #343a40 !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 100% !important;
+    min-width: 30px !important;
+    .arrow {
+      width: 16px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M7 10L12 15L17 10' stroke='%23999999' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+        no-repeat 50% 50%;
+    }
+    option {
+      border-radius: 5px;
+    }
+    ul {
+      display: none;
+      padding: unset;
+      width: 162px;
+      padding: 0 16px;
+      align-items: unset;
+      align-content: unset;
+      align-self: unset;
+      margin-top: 2px;
+      li {
+        color: #343a40;
+      }
+    }
+    .dropdown {
+      padding-top: 8px;
+      padding-bottom: 9px;
+      padding-left: 10px;
+      .droped-value {
+        width: auto;
+      }
+    }
+  }
+  .dropdown-box.active {
+    ul {
+      display: initial;
+      li {
+        padding: 0;
+        font-size: 12px;
+        line-height: 24px;
+        color: var(--Txt_02, #50555c);
+        color: #343a40;
+        a {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+        }
+        &:hover {
+          background-color: transparent;
+          color: #343a40;
+        }
+      }
+    }
+  }
 }
 
 /* status-wrap */
@@ -1507,6 +1561,79 @@ button {
   margin-bottom: 10px;
   overflow-x: hidden;
   max-width: 1200px;
+
+  .dropdown-box {
+    z-index: 1000;
+    position: relative !important;
+    width: 100% !important;
+    height: 35px !important;
+    border: 1px solid #c3caca !important;
+    border-radius: 5px !important;
+    color: #343a40 !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 100% !important;
+    min-width: 30px !important;
+    .dropdown {
+      padding: 8px 10px 9px 10px;
+      box-sizing: border-box;
+    }
+    &.date {
+      width: auto !important;
+    }
+    .arrow {
+      width: 16px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M7 10L12 15L17 10' stroke='%23999999' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+        no-repeat 50% 50%;
+    }
+    .droped-value {
+      padding-right: 10px;
+    }
+    option {
+      border-radius: 5px;
+    }
+    ul {
+      display: none;
+      padding: unset;
+      width: 100%;
+      padding: 0 16px;
+      align-items: unset;
+      align-content: unset;
+      align-self: unset;
+      margin-top: 2px;
+      li {
+        color: #343a40;
+      }
+    }
+  }
+  .dropdown-box.active {
+    ul {
+      display: initial;
+      li {
+        padding: 0;
+        font-size: 12px;
+        line-height: 24px;
+        color: var(--Txt_02, #50555c);
+        color: #343a40;
+        border-radius: 0;
+        background-color: transparent;
+        a {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+        }
+        &:hover {
+          background-color: transparent;
+          color: #343a40;
+        }
+      }
+    }
+  }
+
+  .input-box {
+    position: relative;
+    width: 100%;
+  }
 
   .btnClear {
     display: none;
@@ -2956,16 +3083,6 @@ span.unit {
   margin-bottom: 30px;
   padding: 0;
 
-  // .number {
-  //   input {
-  //     font-size: 16px !important;
-  //     color: #f65858 !important;
-  //     text-align: right;
-  //     font-weight: 700 !important;
-  //     padding-right: 30px;
-  //   }
-  // }
-
   .form-control-input {
     .btnClear {
       display: none;
@@ -2990,7 +3107,6 @@ span.unit {
 
   span.unit {
     position: absolute;
-    // left: 320px;
     top: 7px;
     right: 11px;
   }
@@ -2998,7 +3114,6 @@ span.unit {
   .form-control-input {
     font-size: 14px;
     font-weight: 400;
-    // height: 35px;
     input {
       &.stress {
         font-size: 16px !important;
@@ -3047,6 +3162,71 @@ span.unit {
       }
     }
   }
+  .dropdown-box {
+    z-index: 1000;
+    position: relative !important;
+    width: 100% !important;
+    height: 35px !important;
+    border: 1px solid #c3caca !important;
+    border-radius: 5px !important;
+    color: #343a40 !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 100% !important;
+    min-width: 30px !important;
+    .dropdown {
+      padding: 8px 10px 9px 10px;
+      box-sizing: border-box;
+    }
+    &.date {
+      width: auto !important;
+    }
+    .arrow {
+      width: 16px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M7 10L12 15L17 10' stroke='%23999999' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+        no-repeat 50% 50%;
+    }
+    .droped-value {
+      padding-right: 10px;
+    }
+    option {
+      border-radius: 5px;
+    }
+    ul {
+      display: none;
+      padding: unset;
+      width: 100%;
+      padding: 0 16px;
+      align-items: unset;
+      align-content: unset;
+      align-self: unset;
+      margin-top: 2px;
+      li {
+        color: #343a40;
+      }
+    }
+  }
+  .dropdown-box.active {
+    ul {
+      display: initial;
+      li {
+        padding: 0;
+        font-size: 12px;
+        line-height: 24px;
+        color: var(--Txt_02, #50555c);
+        color: #343a40;
+        a {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+        }
+        &:hover {
+          background-color: transparent;
+          color: #343a40;
+        }
+      }
+    }
+  }
   ul {
     display: flex;
     padding: 20px;
@@ -3069,6 +3249,7 @@ span.unit {
         }
         .input-box {
           display: inline-flex;
+          width: 100%;
         }
       }
     }
@@ -3234,6 +3415,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .w60 {
   width: 60px !important;
+}
+.w63 {
+  width: 63px !important;
 }
 .w65 {
   width: 65px !important;
@@ -3550,6 +3734,12 @@ main section + section {
     width: 720px;
     .pop-content {
       padding: 30px 50px;
+    }
+  }
+  .btn-wrap {
+    justify-content: center;
+    .btn-box {
+      justify-content: center;
     }
   }
 }

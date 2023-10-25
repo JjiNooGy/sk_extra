@@ -37,17 +37,18 @@
           <div class="tab-wrap">
             <div class="tab">
               <div class="tab-button-wrap">
-                <button class="tablinks active" onclick="openCar(event, 'Status00')">양도</button>
+                <button class="tablinks" onclick="openCar(event, 'Status00')">양도</button>
                 <button class="tablinks" onclick="openCar(event, 'Status01')">제휴/소매POST</button>
                 <button class="tablinks" onclick="openCar(event, 'Status02')">소매위탁</button>
                 <button class="tablinks" onclick="openCar(event, 'Status03')">단지제휴</button>
                 <button class="tablinks" onclick="openCar(event, 'Status04')">폐차공매</button>
                 <button class="tablinks" onclick="openCar(event, 'Status05')">탁송</button>
                 <button class="tablinks" onclick="openCar(event, 'Status06')">경매</button>
+                <button class="tablinks active" onclick="openCar(event, 'Status07')">컴포넌트</button>
               </div>
             </div>
 
-            <div id="Status00" class="tabcontent active">
+            <div id="Status00" class="tabcontent">
               <div class="tabcontent-wrap" w3-include-html="list_extra1.html"></div>
             </div>
 
@@ -73,6 +74,10 @@
 
             <div id="Status06" class="tabcontent">
               <div class="tabcontent-wrap" w3-include-html="list_extra7.html"></div>
+            </div>
+
+            <div id="Status07" class="tabcontent active">
+              <div class="tabcontent-wrap" w3-include-html="list_extra8.html"></div>
             </div>
           </div>
         </section>
