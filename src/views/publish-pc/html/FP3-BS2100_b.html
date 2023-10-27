@@ -53,7 +53,7 @@
             <button type="reset" class="filter-reset"><span class="hide-txt">필터 초기화</span></button>
           </div>
 
-          <div class="filter-group accordion">제조사/모델 <span>2개 선택</span></div>
+          <div class="filter-group accordion">제조사 <span>2개 선택</span></div>
           <div class="filter-item hide panel">
             <div class="filter-content">
               <ul class="check-radio-box">
@@ -62,20 +62,20 @@
                     <p>
                       <input type="checkbox" id="checkbox0">
                       <label for="checkbox0">전체</label>
-                      <span>100</span>
+                      <span><img src="../../../assets/pc/img/assignment/ico_model_delete.svg" alt="삭제"></span>
                     </p>
                     <p>
                       <input type="checkbox" id="checkbox1">
                       <label for="checkbox1">
                         현대자동차
                       </label>
-                      <span>100</span>
+                      <span><img src="../../../assets/pc/img/assignment/ico_model_delete.svg" alt="삭제"></span>
                     </p>
                     <p>
                       <input type="checkbox" id="checkbox2">
                       <label for="checkbox2">
                         기아자동차</label>
-                      <span>100</span>
+                      <span><img src="../../../assets/pc/img/assignment/ico_model_delete.svg" alt="삭제"></span>
                     </p>
                   </div>
                   <ul>
@@ -120,21 +120,7 @@
             </div>
           </div>
 
-          <div class="filter-group accordion">차종 <span>2개 선택</span></div>
-          <div class="filter-item hide panel">
-            <div class="filter-content">
-              <div class="cont-box">차종</div>
-            </div>
-          </div>
-
-          <div class="filter-group accordion">연식 <span>1999년 ~ 2023년</span></div>
-          <div class="filter-item hide panel">
-            <div class="filter-content">
-              <div class="cont-box">연식</div>
-            </div>
-          </div>
-
-          <div class="filter-group accordion">주행거리(km) <span>70,000 ~ 200,000 이상</span></div>
+          <div class="filter-group accordion">주행거리(km) <span>70,000 ~ 100,000</span></div>
           <div class="filter-item hide panel">
             <div class="filter-content">
               <div class="cont-box">
@@ -174,39 +160,29 @@
             </div>
           </div>
 
-          <div class="filter-group accordion">가격 <span>300만원 ~1억원 이상</span></div>
+          <div class="filter-group accordion">차량구분 <span>2개 선택</span></div>
           <div class="filter-item hide panel">
             <div class="filter-content">
               <div class="cont-box">
-                <div>
-                  <div class="select-wrap">
-                    <span class="select-box">
-                      <select name="select01" id="select" class="option01">
-                        <option value="" selected="">선택</option>
-                        <option value="001">001</option>
-                        <option value="002">002</option>
-                        <option value="003">003</option>
-                      </select>
-                    </span>
-                  </div>
-                  <div class="select-wrap">
-                    <span class="select-box">
-                      <select name="select01" id="select" class="option01">
-                        <option value="" selected="">선택</option>
-                        <option value="001">001</option>
-                        <option value="002">002</option>
-                        <option value="003">003</option>
-                      </select>
-                    </span>
-                  </div>
-                </div>
-                <div class="stepper-wrap">
-                  <ol class="stepper">
-                    <li class="item">
-                      <h3 class="title">0 원</h3>
-                    </li>
-                    <li class="item">
-                      <h3 class="title">1억원 이상</h3>
+                <div class="button-wrap">
+                  <ol>
+                    <li>
+                      <button type="button">경차</button>
+                      <button type="button">소형</button>
+                      <button type="button">준중형</button>
+                      <button type="button">중형</button>
+                      <button type="button" class="active">대형</button>
+                      <button type="button">특대형</button>
+                      <button type="button">소형디젤</button>
+                      <button type="button">RV</button>
+                      <button type="button">승합</button>
+                      <button type="button">화물</button>
+                      <button type="button">버스</button>
+                      <button type="button">LPG</button>
+                      <button type="button">하이브리드(G)</button>
+                      <button type="button" class="active">하이브리드(L)</button>
+                      <button type="button">전기</button>
+                      <button type="button">수입차</button>
                     </li>
                   </ol>
                 </div>
@@ -214,19 +190,15 @@
             </div>
           </div>
 
-          <div class="filter-group accordion">연료 <span>1개 선택</span></div>
+          <div class="filter-group accordion">입찰여부 <span>1개 선택</span></div>
           <div class="filter-item hide panel">
             <div class="filter-content">
               <div class="cont-box">
                 <div class="button-wrap">
                   <ol>
                     <li>
-                      <button type="button" class="active">전체</button>
-                      <button type="button">가솔린</button>
-                      <button type="button">디젤</button>
-                      <button type="button">LPG</button>
-                      <button type="button">하이브리드</button>
-                      <button type="button">전기</button>
+                      <button type="button" class="active">입찰</button>
+                      <button type="button">미입찰</button>
                     </li>
                   </ol>
                 </div>
@@ -305,6 +277,9 @@
                         <p class="car-title">기아 신형 쏘렌토 (MQ4) 2.2 디젤 2WD 시그니처</p>
                         <p class="car-option">
                           <span>2020년식</span><span>100,444km</span><span>휘발유</span>
+                          <span class="date">
+                            최초등록일 2020.06.09
+                          </span>
                           <span class="grade">사고등급A</span><span class="grade">외관등급 B</span>
                         </p>
                         <div class="car-price">
@@ -330,6 +305,9 @@
                         <p class="car-title">기아 신형 쏘렌토 (MQ4) 2.2 디젤 2WD 시그니처</p>
                         <p class="car-option">
                           <span>2020년식</span><span>100,444km</span><span>휘발유</span>
+                          <span class="date">
+                            최초등록일 2020.06.09
+                          </span>
                           <span class="grade">사고등급A</span><span class="grade">외관등급 B</span>
                         </p>
                         <div class="car-price">
@@ -355,6 +333,9 @@
                         <p class="car-title">기아 신형 쏘렌토 (MQ4) 2.2 디젤 2WD 시그니처</p>
                         <p class="car-option">
                           <span>2020년식</span><span>100,444km</span><span>휘발유</span>
+                          <span class="date">
+                            최초등록일 2020.06.09
+                          </span>
                           <span class="grade">사고등급A</span><span class="grade">외관등급 B</span>
                         </p>
                         <div class="car-price">
@@ -380,6 +361,9 @@
                         <p class="car-title">기아 신형 쏘렌토 (MQ4) 2.2 디젤 2WD 시그니처</p>
                         <p class="car-option">
                           <span>2020년식</span><span>100,444km</span><span>휘발유</span>
+                          <span class="date">
+                            최초등록일 2020.06.09
+                          </span>
                           <span class="grade">사고등급A</span><span class="grade">외관등급 B</span>
                         </p>
                         <div class="car-price">
@@ -405,11 +389,15 @@
                         <p class="car-title">기아 신형 쏘렌토 (MQ4) 2.2 디젤 2WD 시그니처</p>
                         <p class="car-option">
                           <span>2020년식</span><span>100,444km</span><span>휘발유</span>
+                          <span class="date">
+                            최초등록일 2020.06.09
+                          </span>
                           <span class="grade">사고등급A</span><span class="grade">외관등급 B</span>
                         </p>
                         <div class="car-price">
                           <div class="price">
                             <span class="default-price"><em>2,250</em> <i>만원</i></span>
+                            <!-- <span class="purchase-price"><em class="desc">매입가</em><em>2,250</em> <i>만원</i></span> -->
                           </div>
                         </div>
                       </div>
@@ -420,6 +408,12 @@
                       <span>위탁종료임박</span>
                     </div>
                   </div>
+                  <!-- <div class="btn-box-wrap">
+                    <div class="btn-box">
+                      <button type="button" class="btn-compare"><span></span></button>
+                      <button type="button" class="btn-favorite"><span></span></button>
+                    </div>
+                  </div> -->
                 </li>
               </ul>
 
